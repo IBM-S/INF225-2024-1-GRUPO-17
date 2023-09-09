@@ -1,8 +1,8 @@
 # Grupo 10
 Este es el repositorio del *Grupo 10*, cuyos integrantes son:
-* Integrante 1
-* Integrante 2
-* Integrante 3
+* Diego Cisternas
+* Benjamin Pavez
+* Ignacio Muñoz Sanchez
 * **Tutor**: Rodrigo Ramírez
 
 
