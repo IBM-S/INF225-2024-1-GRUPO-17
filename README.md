@@ -6,7 +6,7 @@ Este es el repositorio del *Grupo 10*, cuyos integrantes son:
 * **Tutor**: Rodrigo Ramírez
 
 ## Wiki
-Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/)
+Puede acceder a la Wiki mediante el siguiente [enlace](wiki)
 
 ## Aspectos técnicos relevantes
 Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
