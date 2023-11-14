@@ -5,7 +5,7 @@ Este es el repositorio del *Grupo 10*, cuyos integrantes son:
 * Ignacio Muñoz Sanchez - 202173620-4
 * **Tutor**: Rodrigo Ramírez
   
-# Codigo se encuentra en branch Dev
+# Codigo se encuentra en branch master
   
 ## Wiki
 Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-10/wiki)
