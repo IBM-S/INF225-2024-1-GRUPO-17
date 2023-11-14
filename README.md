@@ -4,9 +4,7 @@ Este es el repositorio del *Grupo 10*, cuyos integrantes son:
 * Benjamin Pavez - 202173628-K
 * Ignacio Muñoz Sanchez - 202173620-4
 * **Tutor**: Rodrigo Ramírez
-  
-# Codigo se encuentra en branch master
-  
+
 ## Wiki
 Puede acceder a la Wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-10/wiki)
 
@@ -16,3 +14,5 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 ## Videos
 * [Video presentación Hito 1](https://youtu.be/CUvjCkt1K8s)
 * [Video presentación Hito 4](https://youtu.be/cvHO4355uLU)
+
+# Codigo se encuentra en branch master
