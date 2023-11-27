@@ -126,7 +126,7 @@ const patientsSchema = new mongoose.Schema({
 	  console.log("Datos recibidos:", req.body);
 	  const nuevoRegistro = new patients(req.body);
 	  await nuevoRegistro.save();
-	  res.status(201).json({ mensaje: 'Información guardada con éxito AAAAAAAAAAA' });
+	  res.status(201).json({ mensaje: 'Información guardada con éxito' });
 	} catch (error) {
 	  console.error('Error al guardar la información:', error);
 	  res.status(500).json({ error: 'Error interno del servidor' });
