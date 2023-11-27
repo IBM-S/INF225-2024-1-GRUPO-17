@@ -1,0 +1,11 @@
+/* style_crear_info.css */
+
+/* Aplica un margen alrededor del formulario */
+.FormMargin {
+    margin: 40px;
+  }
+  
+  /* Aplica un margen inferior a las etiquetas de formulario */
+  .FormLabelMargin {
+    margin-bottom: 20px;
+  }

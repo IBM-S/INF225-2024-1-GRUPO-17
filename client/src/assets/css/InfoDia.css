@@ -1,0 +1,46 @@
+table{
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+  }
+.table-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* O cualquier altura deseada para el contenedor */
+}
+  
+  th, td {
+    border: 1px solid rgb(0, 0, 0); /* Agrega bordes a las celdas para formar una tabla cuadrada */
+    padding: 10px; /* Añade espacio interno para mejorar la apariencia */
+    text-align: center; /* Centra el texto en las celdas */
+  }
+  
+  thead {
+    background-color: #fff; /* Quita el color de fondo del encabezado */
+  }
+  
+  tbody {
+    background-color: #ffffff; /* Quita el color de fondo del cuerpo de la tabla */
+  }
+  
+/* Estilos para el botón */
+.buttonContainer {
+  text-align: center; /* Alinea el botón al centro */
+  margin-top: 20px; /* Agrega un espacio encima del botón */
+  margin-bottom: 10px;
+}
+
+.buttonContainer button {
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  background-color: #f0f0f0; /* Cambia el color de fondo del botón */
+  border: 1px solid #000; /* Agrega un borde al botón */
+  border-radius: 5px; /* Redondea las esquinas */
+  cursor: pointer; /* Muestra un cursor al pasar sobre el botón */
+}
+
+.inputContainer {
+  font-size: 20px;
+  text-align: center; /* Alinea el botón al centro */
+  margin-top: 20px; /* Agrega un espacio encima del botón */
+  margin-bottom: 10px;
+}

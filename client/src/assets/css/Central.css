@@ -1,0 +1,22 @@
+/* Estilos para el contenedor principal */
+.central-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Establece la altura para centrar verticalmente */
+    gap : 10px;
+  }
+  
+  /* Estilos para los botones */
+  .custom-button {
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
