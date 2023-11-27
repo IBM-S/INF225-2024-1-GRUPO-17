@@ -14,6 +14,6 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 ## Videos
 * [Video presentación Hito 1](https://youtu.be/CUvjCkt1K8s)
 * [Video presentación Hito 4](https://youtu.be/cvHO4355uLU)
-* [Video final]()
+* [Video final H6-7](https://youtu.be/YYfvixyrhjg)
 
 # Codigo se encuentra en branch master
