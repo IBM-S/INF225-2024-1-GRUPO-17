@@ -1,12 +1,12 @@
-# Grupo 10 - Sistema de Gestión de Horarios de Exámenes Médicos
+# Grupo 17 - Sistema de Gestión de Horarios de Exámenes Médicos
 
-Este repositorio pertenece al **Grupo 10**, compuesto por:
+Este repositorio pertenecia al **Grupo 10**, Acualmente pertenece al **Grupo 17** compuesto por:
 
-Este es el repositorio del *Grupo 10*, cuyos integrantes son:
-* Diego Cisternas - 202173521-6
+* Alessandro Cintolesi - 202173541-0
+* Sebastian Apellido - 202XXXXXX-X
 * Benjamin Pavez - 202173628-K
 * Ignacio Muñoz Sanchez - 202173620-4
-* **Tutor**: Rodrigo Ramírez
+* **Ayudante**: Vicente Ruiz
 
 ## Descripción del Proyecto
 El proyecto busca abordar la problemática presente en un hospital público de Santiago, específicamente en el área de imagenología, donde actualmente se lleva el registro de horas para la toma de exámenes de manera manual. Esta modalidad ha generado errores administrativos y dificultades en la gestión eficiente de los horarios. Se propone desarrollar un sistema de gestión de horarios de exámenes médicos que permita automatizar el proceso, evitar errores humanos y mejorar la organización de la información.
@@ -25,10 +25,11 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 * [Tutorial MERN Stack](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 ## Videos de Presentación
-* [Hito 1](https://youtu.be/CUvjCkt1K8s)
-* [Hito 4](https://youtu.be/cvHO4355uLU)
-* [H6-7](https://youtu.be/YYfvixyrhjg)
+* [Video presentación Hito 1](https://youtu.be/CUvjCkt1K8s)
+* [Video presentación Hito 4](https://youtu.be/cvHO4355uLU)
+* [Video final H6-7](https://youtu.be/YYfvixyrhjg)
 
 El código del proyecto se encuentra en el branch master del repositorio.
 
-¡Bienvenido a explorar nuestro proyecto y contribuir a su desarrollo!
+2023-2
+2024-1
