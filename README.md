@@ -31,5 +31,4 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 
 El código del proyecto se encuentra en el branch master del repositorio.
 
-2023-2
-2024-1
+2023-2  2024-1
