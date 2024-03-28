@@ -4,8 +4,8 @@ Este repositorio pertenecia al **Grupo 10**, Acualmente pertenece al **Grupo 17*
 
 * Alessandro Cintolesi - 202173541-0
 * Sebastian Apellido - 202XXXXXX-X
-* Benjamin Pavez - 202173628-K
 * Ignacio Muñoz Sanchez - 202173620-4
+* Benjamin Pavez - 202173628-K
 * **Ayudante**: Vicente Ruiz
 
 ## Descripción del Proyecto
