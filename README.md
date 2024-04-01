@@ -22,6 +22,7 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 
 ## Enlaces Útiles
 * [Wiki del Proyecto](https://github.com/Zurickata/INF236-2023-2-GRUPO-10/wiki)
+* [Retrospectiva](https://github.com/Zurickata/INF236-2023-2-GRUPO-10/wiki) 
 * [Tutorial MERN Stack](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 ## Videos de Presentación
