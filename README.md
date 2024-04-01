@@ -26,9 +26,9 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 * [Tutorial MERN Stack](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 ## Videos de Presentación
-* [Video presentación Hito 1](https://youtu.be/CUvjCkt1K8s)
-* [Video presentación Hito 4](https://youtu.be/cvHO4355uLU)
-* [Video final H6-7](https://youtu.be/YYfvixyrhjg)
+* [Video Presentación Hito 1](https://youtu.be/CUvjCkt1K8s)
+* [Video Presentación Hito 4](https://youtu.be/cvHO4355uLU)
+* [Video Presentación Final Hito 6-7](https://youtu.be/YYfvixyrhjg)
 
 El código del proyecto se encuentra en el branch master del repositorio.
 
