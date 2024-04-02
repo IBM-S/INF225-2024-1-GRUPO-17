@@ -3,7 +3,7 @@
 Este repositorio pertenecia al **Grupo 10**, Acualmente pertenece al **Grupo 17** compuesto por:
 
 * Alessandro Cintolesi - 202173541-0
-* Sebastian Poppen - 202XXXXXX-X
+* Sebastian Poppen - 202073526-3
 * Ignacio Muñoz Sanchez - 202173620-4
 * Benjamin Pavez - 202173628-K
 * **Ayudante**: Vicente Ruiz
