@@ -1,0 +1,42 @@
+{
+  "name": "inf236-users-backend-boilerplate",
+  "version": "1.0.0",
+  "description": "## Instalación",
+  "main": "index.js",
+  "type": "module",
+  "sourceType": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadokDev/INF236-Users-Backend-Boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadokDev/INF236-Users-Backend-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/VadokDev/INF236-Users-Backend-Boilerplate#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "prettier": "^2.2.1",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "nodemon": "^3.0.1",
+    "sequelize-cli": "^6.6.2"
+  }
+}
