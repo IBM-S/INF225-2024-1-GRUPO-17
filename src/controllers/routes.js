@@ -1,26 +1,39 @@
-import PacienteController from './pacienteController.js';
-import TrabajadorController from './trabajadorController.js';
-import HoraMedicaController from './horamedicaController.js';
+import PatientController from './patientController.js';
+import WorkerController from './workerController.js';
+import EquipmentController from './equipmentController.js';
+import MedicalAppointmentController from './medicalAppointmentController.js';
 import VerifySign from './verifytoken.js';
 
 export default (app) => {
-	const pacienteController = new PacienteController();
+	const patientController = new PatientController();
 
-	app.get('/allPacientes', pacienteController.getAllPacientes);
-	app.post('/loginPaciente', pacienteController.loginPaciente);
-	app.post('/registerPaciente', pacienteController.registerPaciente);
+	app.get('/allPatients', patientController.getAll);
+	app.get('/patientByRut', patientController.getByRut);
+	app.post('/loginPatient', patientController.login);
+	app.post('/registerPatient', patientController.register);
 
-	const trabajadorController = new TrabajadorController();
+	const workerController = new WorkerController();
 
-	app.get('/allTrabajadores', trabajadorController.getAllTrabajadores);
-	app.post('/loginTrabajador', trabajadorController.loginTrabajador);
-	app.post('/registerTrabajador', trabajadorController.registerTrabajador);
+	app.get('/allWorkers', workerController.getAll);
+	app.get('/workerByRut', workerController.getByRut);
+	app.post('/loginWorker', workerController.login);
+	app.post('/registerWorker', workerController.register);
+
+	const medicalAppointmentController = new MedicalAppointmentController();
+
+	app.get('/allMedicalAppointments', VerifySign, medicalAppointmentController.getAll);
+	app.get('/medicalAppointmentById', VerifySign, medicalAppointmentController.getById);
+	app.get('/medicalAppointmentByPatient', VerifySign, medicalAppointmentController.getByPatient);
+	app.get('/medicalAppointmentByExamType', VerifySign, medicalAppointmentController.getByExamType);
+	app.delete('/deleteMedicalAppointment', VerifySign, medicalAppointmentController.delete);
+	app.post('/createMedicalAppointment', VerifySign, medicalAppointmentController.create);
+	app.put('/updateMedicalAppointment', VerifySign, medicalAppointmentController.update);
+
+	const equipmentController = new EquipmentController();
+
+	app.get('/allEquipment', equipmentController.getAll);
+	app.get('/getEquipmentById', equipmentController.getById);
+	app.delete('/deleteEquipment', equipmentController.delete);
+	app.post('/createEquipment', equipmentController.create);
 	
-	const horamedicaController = new HoraMedicaController();
-
-	app.get('/allHorasMedicas', VerifySign ,horamedicaController.getAllHorasMedicas);
-	app.get('/allPacienteHorasMedicas', VerifySign ,horamedicaController.getAllPacienteHorasMedicas);
-	app.delete('/deleteHoraMedica', VerifySign, horamedicaController.deleteHoraMedica);
-	app.post('/createHoraMedica', VerifySign, horamedicaController.createHoraMedica);
-	app.put('/updateHoraMedica', VerifySign, horamedicaController.updateHoraMedica);
 };

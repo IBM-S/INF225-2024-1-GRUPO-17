@@ -1,0 +1,129 @@
+import MedicalAppointment from '../models/medicalappointment.js';
+import bcrypt from "bcrypt";
+import jwt from 'jsonwebtoken';
+
+export default class MedicalAppointmentController {
+
+	async getAll(req, res) {
+		try {
+			const allMedicalAppointments = await MedicalAppointment.findAll();
+			if (!allMedicalAppointments) return res.status(400).send("No existen MedicalAppointments.");
+			res.send(allMedicalAppointments);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener todos los MedicalAppointments.");
+			console.log(error);
+		}
+	}
+
+	async getById(req, res) {
+		try {
+			const medicalAppointment = await MedicalAppointment.findOne({
+				where: {
+					id: req.body.id,
+				},
+			});
+			if (!medicalAppointment) return res.status(400).send("MedicalAppointment no existente.");
+			return res.send(medicalAppointment);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener MedicalAppointment a partir de un id.");
+			console.log(error);
+		}
+	}
+
+	async getByPatient(req, res) {
+		try {
+			const medicalAppointments = await MedicalAppointment.findAll({
+				where: {
+					rut_patient: req.user.rut
+				},
+			});
+			if (!medicalAppointments) return res.status(400).send("El Patient no tiene MedicalAppointments.");
+			return res.send(medicalAppointments);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener los MedicalAppointments de un Patient.");
+			console.log(error);
+		}
+	}
+
+	async getByExamType(req, res){
+		try {
+			const medicalAppointments = await MedicalAppointment.findAll({
+				where: {
+					exam_type: req.body.exam_type
+				},
+			});
+			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments del tipo ExamType.");
+			return res.send(medicalAppointments);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener los MedicalAppointments del tipo ExamType.");
+			console.log(error);
+		}
+	}
+
+	async create(req, res) {
+		try {
+			const valid = await MedicalAppointment.findOne({
+				where: {
+					date: req.body.date,
+					start_time: req.body.start_time,
+					end_time: req.body.end_time,
+					rut_doctor: req.body.rut_doctor,
+				},
+			});
+			if (valid) return res.status(400).send("Ya existe un MedicalAppointment para un mismo Date-Time-Doctor.");
+			const medicalAppointment = await MedicalAppointment.create({
+				date: req.body.date,
+				start_time: req.body.start_time,
+				end_time: req.body.end_time,
+				exam_type: req.body.exam_type,
+				diagnosis: req.body.diagnosis,
+				rut_patient: req.user.rut,
+				rut_doctor: req.body.rut_doctor,
+				rut_assistant: req.body.rut_assistant,
+				//id_equipment: req.body.id_equipment, NO BORRAR PARA IMPLEMENTAR MÁS ADELANTE.
+			});
+			return res.send(medicalAppointment);
+		} catch (error) {
+			res.status(400).send("Error al tratar de crear un MedicalAppointment.");
+			console.log(error);
+		}
+	}
+
+	async delete(req, res) {
+		try {
+			await MedicalAppointment.destroy({
+				where: {
+					id: req.body.id,
+				},
+			});
+			res.send({status: "ok"});
+		} catch (error) {
+			res.status(400).send("Error al tratar de borrar un MedicalAppointment.");
+			console.log(error);
+		}
+	}
+
+	async update(req, res) {
+		try {
+			const medicalAppointment = await MedicalAppointment.findOne({
+				where: {
+					id: req.body.id,
+				},
+			});
+			if (!medicalAppointment) return res.status(400).send("El MedicalAppointment buscado no existe.");
+			medicalAppointment.update({
+				date: req.body.date,
+				start_time: req.body.start_time,
+				end_time: req.body.end_time,
+				exam_type: req.body.exam_type,
+				rut_doctor: req.body.rut_doctor,
+				rut_assistant: req.body.rut_assistant,
+				//id_equipment: req.body.id_equipment, NO BORRAR PARA IMPLEMENTAR MÁS ADELANTE.
+			});
+			return res.send(medicalAppointment);
+		} catch (error) {
+			res.status(400).send("Error al tratar de actualizar un MedicalAppointment.");
+			console.log(error);
+		}
+	}
+}
