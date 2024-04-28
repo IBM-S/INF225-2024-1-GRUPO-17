@@ -25,6 +25,8 @@ export default (app) => {
 	app.get('/medicalAppointmentById', VerifySign, medicalAppointmentController.getById);
 	app.get('/medicalAppointmentByPatient', VerifySign, medicalAppointmentController.getByPatient);
 	app.get('/medicalAppointmentByExamType', VerifySign, medicalAppointmentController.getByExamType);
+	app.get('/medicalAppointmentByDoctor', VerifySign, medicalAppointmentController.getByDoctor);
+	app.get('/medicalAppointmentByAssistant', VerifySign, medicalAppointmentController.getByAssistant);
 	app.delete('/deleteMedicalAppointment', VerifySign, medicalAppointmentController.delete);
 	app.post('/createMedicalAppointment', VerifySign, medicalAppointmentController.create);
 	app.put('/updateMedicalAppointment', VerifySign, medicalAppointmentController.update);

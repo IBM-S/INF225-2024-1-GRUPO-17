@@ -60,6 +60,36 @@ export default class MedicalAppointmentController {
 		}
 	}
 
+	async getByDoctor(req, res){
+		try {
+			const medicalAppointments = await MedicalAppointment.findAll({
+				where: {
+					rut_doctor: req.body.rut_doctor
+				},
+			});
+			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments relacionadas a este Doctor.");
+			return res.send(medicalAppointments);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener los MedicalAppointments a partir de un rut de un Doctor.");
+			console.log(error);
+		}
+	}
+
+	async getByAssistant(req, res){
+		try {
+			const medicalAppointments = await MedicalAppointment.findAll({
+				where: {
+					rut_assistant: req.body.rut_assistant
+				},
+			});
+			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments relacionadas a este Assistant.");
+			return res.send(medicalAppointments);
+		} catch (error) {
+			res.status(400).send("Error al tratar de obtener los MedicalAppointments a partir de un rut de un Assistant.");
+			console.log(error);
+		}
+	}
+
 	async create(req, res) {
 		try {
 			const valid = await MedicalAppointment.findOne({
