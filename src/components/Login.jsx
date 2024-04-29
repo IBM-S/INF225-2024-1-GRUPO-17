@@ -26,16 +26,15 @@
 //
 // -----------------------------------------------------------------------------
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './../assets/css/style_login.css';
 
 //Nuevos imports
 import axios from 'axios';
-import {Form, Col, Row, Button, Container} from 'react-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
+import {Form} from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
 import {login, logout} from '../redux/actions/authActions.js';
-import { useNavigate } from 'react-router-dom';
 
 const buttonContainerStyle = {
 	textAlign: 'center',
@@ -67,20 +66,18 @@ const contenedorculiao = {
 };
 
 
-function LoginSignup(props){
+function Login(props){
 	const [rut, setRut] = useState('');
-	const [contraseña, setContraseña] = useState('');
-	const [estado, setEstado] = useState('');
+	const [password, setPassword] = useState('');
 	const dispatch = useDispatch();
 
-	const navigate = useNavigate();
 
 	const handleRut = (e) => {
 		setRut(e.target.value);
 	}
 
-	const handleContraseña = (e) => {
-		setContraseña(e.target.value);
+	const handlePassword = (e) => {
+		setPassword(e.target.value);
 	}
 
 	const handleLogout = (e) => {
@@ -89,15 +86,15 @@ function LoginSignup(props){
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		axios.post('http://localhost:8080/loginPaciente', {
+		axios.post('http://localhost:8080/loginPatient', {
 			rut: rut,
-			contraseña: contraseña,
+			password: password,
 		}).then((data) => {
 			console.log(data);
 			dispatch(login());
 			
 			localStorage.setItem('token', data.headers['auth-token']);
-			window.location.href = '/CentralPaciente'
+			window.location.href = '/Central'
 		})
 		.catch((error) => {
             // Maneja los errores si es necesario
@@ -134,7 +131,7 @@ function LoginSignup(props){
 
 											<Form.Group controlId="formBasicPassword">
 												<Form.Label>Contraseña</Form.Label>
-												<Form.Control onChange={handleContraseña} type="contraseña" placeholder="contraseña" />
+												<Form.Control onChange={handlePassword} type="contraseña" placeholder="contraseña" />
 											</Form.Group>
 										</Form>
 										<div style={buttonContainerStyle} className="btn-container">
@@ -157,4 +154,4 @@ function LoginSignup(props){
 	);
 }
 
-export default LoginSignup;
+export default Login;

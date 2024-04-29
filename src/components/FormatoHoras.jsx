@@ -43,40 +43,49 @@ import './../assets/profile/assets/plugins/bootstrap/js/bootstrap.bundle.min.js'
 //Funcion Nacho Alessandro
 function FormatoHoras() {
 	const isLogged = useSelector((store) => store.authReducer.isLogged);
-	const [fecha, setFecha] = useState('');
-	const [hora, setHora] = useState('');
-    const [posible_diagnostico, setPosibleDiagnostico] = useState('');
-    const [id_medico_deriva, setId_medico_deriva] = useState('');
+	const [date, setDate] = useState('');
+	const [start_time, setStartTime] = useState('');
+    const [end_time, setEndTime] = useState('');
+    const [exam_type, setExamType] = useState('');
+    const [diagnosis, setDiagnosis] = useState('');
+	const [rut_doctor, setRutDoctor] = useState('');
+    const [rut_assistant, setRutAssistant] = useState('');
 
 	const dispatch = useDispatch();
 
-	const handleFecha = (e) => {
-		setFecha(e.target.value);
+	const handleDate = (e) => {
+		setDate(e.target.value);
 	}
-
-	const handleHora = (e) => {
-		setHora(e.target.value);
+	const handleStartTime = (e) => {
+		setStartTime(e.target.value);
 	}
-
-	const handlePosibleDiagnostico = (e) => {
-		setPosibleDiagnostico(e.target.value);
+	const handleEndTime = (e) => {
+		setEndTime(e.target.value);
 	}
-
-    const handleId_medico_deriva = (e) => {
-		setId_medico_deriva(e.target.value);
+    const handleExamType = (e) => {
+		setExamType(e.target.value);
 	}
-
-	/* const handleId_paciente = (e) => {
-		setId_paciente(e.target.value);
-	} */
+    const handleDiagnosis = (e) => {
+		setDiagnosis(e.target.value);
+	}
+    const handleRutDoctor = (e) => {
+		setRutDoctor(e.target.value);
+	}
+    const handleRutAssistant = (e) => {
+		setRutAssistant(e.target.value);
+	}
+	
 
 	const handleSubmit = (e) => { 
 		e.preventDefault();
-		axios.post('http://localhost:8080/createHoraMedica', {
-			fecha: fecha,
-			hora: hora,
-			posible_diagnostico: posible_diagnostico,
-            id_medico_deriva: id_medico_deriva,
+		axios.post('http://localhost:8080/createMedicalAppointment', {
+			date: date,
+			start_time: start_time,
+            end_time: end_time,
+			exam_type: exam_type,
+            diagnosis: diagnosis,
+            rut_doctor: rut_doctor,
+            rut_assistant: rut_assistant,
 		}, {
 			headers: {
 				'auth-token': localStorage.getItem('token'),
@@ -196,23 +205,40 @@ function FormatoHoras() {
 					<Form>
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label>Fecha</Form.Label>
-							<Form.Control onChange={handleFecha} type="email" placeholder="Enter nombre" />
+							<Form.Control onChange={handleDate} type="email" placeholder="Enter fecha" />
 						</Form.Group>
 
-						<Form.Group controlId="formBasicEmail">
-							<Form.Label>Hora</Form.Label>
-							<Form.Control onChange={handleHora} type="email" placeholder="Enter descripción" />
+                        <Form.Group controlId="formBasicEmail">
+							<Form.Label>Hora de inicio</Form.Label>
+							<Form.Control onChange={handleStartTime} type="email" placeholder="Enter nombre" />
+						</Form.Group>
+
+                        <Form.Group controlId="formBasicEmail">
+							<Form.Label>Hora de termino</Form.Label>
+							<Form.Control onChange={handleEndTime} type="email" placeholder="Enter nombre" />
+						</Form.Group>
+
+                        <Form.Group controlId="formBasicEmail">
+							<Form.Label>Tipo de examen</Form.Label>
+							<Form.Control onChange={handleExamType} type="email" placeholder="Enter nombre" />
 						</Form.Group>
 
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label>Posible diagnostico</Form.Label>
-							<Form.Control onChange={handlePosibleDiagnostico} type="email" placeholder="Enter descripción" />
+							<Form.Control onChange={handleDiagnosis} type="email" placeholder="Enter descripción" />
 						</Form.Group>
 
 						<Form.Group controlId="formBasicEmail">
-							<Form.Label>Medico que lo deriva</Form.Label>
-							<Form.Control onChange={handleId_medico_deriva} type="email" placeholder="Enter descripción" />
+							<Form.Label>Rut Doctor</Form.Label>
+							<Form.Control onChange={handleRutDoctor} type="email" placeholder="Enter descripción" />
 						</Form.Group>
+
+						<Form.Group controlId="formBasicEmail">
+							<Form.Label>Rut asistente</Form.Label>
+							<Form.Control onChange={handleRutAssistant} type="email" placeholder="Enter descripción" />
+						</Form.Group>
+
+                        
 						<Button onClick={handleSubmit} variant="primary" type="submit">
 							Enviar
 						</Button>
