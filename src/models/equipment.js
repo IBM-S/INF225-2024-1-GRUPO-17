@@ -17,7 +17,15 @@ Equipment.init({
 		autoIncrement: true,
 		primaryKey: true,
 	},
-	equipment_type: DataTypes.STRING,
+	equipment_type: {
+		type: DataTypes.STRING,
+		validate: {
+			isIn: {
+				args: [['resonancia','tomografia','rayos','ecografia']],
+				msg: "Equipment Type no es valido",
+			}
+		}
+	},
 	}, {
 		sequelize,
 		timestamps: false,

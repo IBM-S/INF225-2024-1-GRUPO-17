@@ -19,7 +19,15 @@ Patient.init({
 	password: DataTypes.STRING,
 	birthdate: DataTypes.DATEONLY,
 	allergies: DataTypes.ARRAY(DataTypes.STRING),
-	fonasa: DataTypes.STRING,
+	fonasa: {
+		type: DataTypes.STRING,
+		validate: {
+			isIn: {
+				args: [['A','B','C','D']],
+				msg: "Fonasa no es valido",
+			}
+		}
+	},
 	address: DataTypes.STRING,
 	phone_number: DataTypes.STRING
 	}, {

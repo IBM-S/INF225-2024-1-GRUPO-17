@@ -74,4 +74,18 @@ export default class WorkerController {
 			console.log(error);
 		}
 	}
+
+	async delete(req, res) {
+		try {
+			await Worker.destroy({
+				where: {
+					rut: req.body.rut,
+				},
+			});
+			res.send({status: "ok"});
+		} catch (error) {
+			res.status(400).send("Error al tratar de borrar un Worker.");
+			console.log(error);
+		}
+	}
 }

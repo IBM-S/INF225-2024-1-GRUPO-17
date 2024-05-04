@@ -29,7 +29,15 @@ MedicalAppointment.init({
 	date: DataTypes.DATEONLY,
 	start_time: DataTypes.TIME,
 	end_time: DataTypes.TIME,
-	exam_type: DataTypes.STRING,
+	exam_type: {
+		type: DataTypes.STRING,
+		validate: {
+			isIn: {
+				args: [['resonancia','tomografia','rayos','ecografia']],
+				msg: "Exam Type no es valido",
+			}
+		}
+	},
 	diagnosis: DataTypes.STRING,
 	rut_patient: DataTypes.STRING,
 	rut_doctor: DataTypes.STRING,

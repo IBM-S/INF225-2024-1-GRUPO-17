@@ -29,7 +29,10 @@ module.exports = {
 			position: {
 				type: Sequelize.STRING,
 				validate: {
-					isIn: [['jefe_unidad','secretaria_unidad','tecnologo_medico','medico_radiologo','tens']]
+					isIn: {
+						args: [['jefe_unidad','secretaria_unidad','tecnologo_medico','medico_radiologo','tens']],
+						msg: "Position no es valido",
+					}
 				}
 			},
 		});

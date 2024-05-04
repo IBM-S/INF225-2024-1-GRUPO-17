@@ -75,4 +75,18 @@ export default class PatientController {
 			console.log(error);
 		}
 	}
+
+	async delete(req, res) {
+		try {
+			await Patient.destroy({
+				where: {
+					rut: req.body.rut,
+				},
+			});
+			res.send({status: "ok"});
+		} catch (error) {
+			res.status(400).send("Error al tratar de borrar un Patient.");
+			console.log(error);
+		}
+	}
 }

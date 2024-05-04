@@ -12,7 +12,10 @@ module.exports = {
 			equipment_type: {
 				type: Sequelize.STRING,
 				validate: {
-					isIn: [['resonancia','tomografia','rayos','ecografia']]
+					isIn: {
+						args: [['resonancia','tomografia','rayos','ecografia']],
+						msg: "Equipment Type no es valido",
+					}
 				}
 			},
 		});

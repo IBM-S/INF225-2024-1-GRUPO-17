@@ -11,6 +11,7 @@ export default (app) => {
 	app.get('/patientByRut', patientController.getByRut);
 	app.post('/loginPatient', patientController.login);
 	app.post('/registerPatient', patientController.register);
+	app.delete('/deletePatient', patientController.delete);
 
 	const workerController = new WorkerController();
 
@@ -18,6 +19,7 @@ export default (app) => {
 	app.get('/workerByRut', workerController.getByRut);
 	app.post('/loginWorker', workerController.login);
 	app.post('/registerWorker', workerController.register);
+	app.delete('/deleteWorker', workerController.delete);
 
 	const medicalAppointmentController = new MedicalAppointmentController();
 

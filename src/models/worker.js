@@ -23,7 +23,15 @@ Worker.init({
 	birthdate: DataTypes.DATEONLY,
 	address: DataTypes.STRING,
 	phone_number: DataTypes.STRING,
-	position: DataTypes.STRING
+	position: {
+		type: DataTypes.STRING,
+		validate: {
+			isIn: {
+				args: [['jefe_unidad','secretaria_unidad','tecnologo_medico','medico_radiologo','tens']],
+				msg: "Position no es valido",
+			}
+		}
+	},
 	}, {
 		sequelize,
 		timestamps: false,

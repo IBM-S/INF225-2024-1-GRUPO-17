@@ -21,7 +21,10 @@ module.exports = {
 			exam_type: {
 				type: Sequelize.STRING,
 				validate: {
-					isIn: [['resonancia','tomografia','rayos','ecografia']]
+					isIn: {
+						args: [['resonancia','tomografia','rayos','ecografia']],
+						msg: "Exam Type no es valido",
+					}
 				}
 			},
 			diagnosis: {

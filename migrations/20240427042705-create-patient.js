@@ -26,7 +26,10 @@ module.exports = {
 			fonasa: {
 				type: Sequelize.STRING,
 				validate: {
-					isIn: [['A','B','C','D']]
+					isIn: {
+						args: [['A','B','C','D']],
+						msg: "Fonasa no es valido",
+					}
 				}
 			},
 			address: {
