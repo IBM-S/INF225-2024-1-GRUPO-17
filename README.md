@@ -21,6 +21,12 @@ DB_DATABASE=database
 DB_DIALECT=postgres
 ```
 
+Recordar cambiar el username y passowrd en los siguientes archivos:
+```bash
+src/database.js
+migrations/config.json
+```
+
 Ejecutamos las migraciones
 ```
 npx sequelize db:migrate
