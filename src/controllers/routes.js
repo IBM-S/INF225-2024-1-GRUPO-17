@@ -8,7 +8,7 @@ export default (app) => {
 	const patientController = new PatientController();
 
 	app.get('/allPatients', patientController.getAll);
-	app.get('/patientByRut', patientController.getByRut);
+	app.get('/patientByRut', VerifySign, patientController.getByRut);
 	app.post('/loginPatient', patientController.login);
 	app.post('/registerPatient', patientController.register);
 	app.delete('/deletePatient', patientController.delete);
@@ -16,7 +16,7 @@ export default (app) => {
 	const workerController = new WorkerController();
 
 	app.get('/allWorkers', workerController.getAll);
-	app.get('/workerByRut', workerController.getByRut);
+	app.get('/workerByRut', VerifySign, workerController.getByRut);
 	app.post('/loginWorker', workerController.login);
 	app.post('/registerWorker', workerController.register);
 	app.delete('/deleteWorker', workerController.delete);

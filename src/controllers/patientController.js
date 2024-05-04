@@ -18,7 +18,7 @@ export default class PatientController {
 		try {
 			const patient = await Patient.findOne({
 				where: {
-					rut: req.body.rut,
+					rut: req.user.rut,
 				},
 			});
 			if (!patient) return res.status(400).send("Patient no existente.");

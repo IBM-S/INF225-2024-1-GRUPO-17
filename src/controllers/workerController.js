@@ -18,7 +18,7 @@ export default class WorkerController {
 		try {
 			const worker = await Worker.findOne({
 				where: {
-					rut: req.body.rut,
+					rut: req.user.rut,
 				},
 			});
 			if (!worker) return res.status(400).send("Worker no existente.");
