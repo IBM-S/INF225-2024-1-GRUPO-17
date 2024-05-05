@@ -167,10 +167,16 @@ function FormatoHoras() {
 							<Form.Control onChange={handleEndTime} type="time" placeholder="Enter nombre" />
 						</Form.Group>
 
-                        <Form.Group controlId="formBasicEmail">
-							<Form.Label>Tipo de examen</Form.Label>
-							<Form.Control onChange={handleExamType} type="email" placeholder="Enter nombre" />
-						</Form.Group>
+                        <Form.Group controlId="formExamType">
+                            <Form.Label>Tipo de examen</Form.Label>
+                            <Form.Select onChange={handleExamType}>
+                                <option value="">Seleccione una opción</option>
+                                <option value="a">resonancia</option>
+                                <option value="b">tomografia</option>
+                                <option value="c">rayos</option>
+                                <option value="d">ecografia</option>
+                            </Form.Select>
+                        </Form.Group>
 
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label>Posible diagnostico</Form.Label>
