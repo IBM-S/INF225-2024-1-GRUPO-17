@@ -18,6 +18,9 @@ import {
 
 import "./assets/css/bootstrap.min.css";
 import MostrarHoraPaciente from './components/MostrarHoraPaciente';
+import Register from './components/Register';
+import AgregarHoraPaciente from './components/AgregarHoraPaciente';
+import navbar from './components/navbar';
 
 function App() {
   return (
@@ -26,12 +29,15 @@ function App() {
       <Route exact path="/" Component={Login} />
         <Route path="/FormatoHoras" Component={FormatoHoras} />
         <Route path="/mostrarhorapaciente" Component={MostrarHoraPaciente} />
+        <Route path="/agregarhorapaciente" Component={AgregarHoraPaciente} />
         <Route path="/central/" Component={Central} />
         <Route path="/login" Component={Login} />
         <Route path="/infodia" Component={InfoDia}/>
         <Route path="/usuario/" Component={Usuario}/>
+        <Route path="/navbar/" Component={navbar}/>
         <Route path="/Pruebas/" Component={Pruebas}/>
         <Route path="/personal/" Component={Personal}/>
+        <Route path="/register" Component={Register}/>
         <Route path="/calendario" element={<EventsCalendar />} /> 
       </Routes>
     </Router>

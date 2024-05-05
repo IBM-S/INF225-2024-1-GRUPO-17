@@ -26,16 +26,69 @@
 //
 // -----------------------------------------------------------------------------
 
-import React from 'react';
-
 //Estilos
 import './../assets/profile/assets/plugins/bootstrap/css/bootstrap.min.css';
 import './../assets/profile/css/style.css';
 import './../assets/profile/css/colors/default-dark.css';
 import './../assets/profile/assets/plugins/bootstrap/js/bootstrap.bundle.min.js';
 
+import React, { useEffect, useState } from 'react';
+import { Button, Row, Col } from "react-bootstrap";
+import axios from 'axios';
+import { mostrarData } from '../redux/actions/dataPacienteActions.js';
+import { useSelector, useDispatch } from "react-redux";
+
+function calcularEdad(fechaNacimiento) {
+    // Convierte la fecha de nacimiento a un objeto Date
+    const fechaNac = new Date(fechaNacimiento);
+    
+    // Obtiene la fecha actual
+    const fechaActual = new Date();
+    
+    // Calcula la diferencia de años
+    let edad = fechaActual.getFullYear() - fechaNac.getFullYear();
+    
+    // Verifica si la persona aún no ha cumplido años este año
+    const mesActual = fechaActual.getMonth();
+    const diaActual = fechaActual.getDate();
+    const mesNac = fechaNac.getMonth();
+    const diaNac = fechaNac.getDate();
+    
+    if (mesActual < mesNac || (mesActual === mesNac && diaActual < diaNac)) {
+        // Si aún no ha cumplido años este año, resta uno a la edad
+        edad--;
+    }
+    
+    return edad;
+}
+
 
 function User() {
+
+  const dispatch = useDispatch();
+  const dataPaciente = useSelector((store) => store.dataReducer.datas);
+  const isLogged = useSelector((store) => store.authReducer.isLogged);
+
+  // Al montar el componente, realiza la solicitud para obtener los datos de los pacientes
+  useEffect(() => {
+    if (isLogged) {
+      // Realizar la solicitud para obtener los datos de los pacientes
+      axios.get('http://localhost:8080/patientByRut',{
+        headers: {
+          "auth-token": localStorage.getItem("token"),
+        },
+      })
+      .then((data) => {
+        console.log(data);
+        dispatch(mostrarData(data.data));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
+  }, []);
+  
+
   return (
     <div className="fix-header card-no-border fix-sidebar">
         <div className="topbar">
@@ -114,7 +167,7 @@ function User() {
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="AgregarHoraPaciente" aria-expanded="false">
                                 <i className="mdi mdi-book-open-variant"></i>
                                 <span className="hide-menu">Agregar Hora</span>
                             </a>
@@ -137,7 +190,7 @@ function User() {
 
 
 
-        <div className="page-wrapper">
+        <div className="page-wrapper" style={{ maxHeight: '1000px', overflowY: 'auto' }}>
             <div className="container-fluid">
                 <div className="row page-titles">
                 <div className="col-md-5 align-self-center">
@@ -155,7 +208,7 @@ function User() {
                     <div className="card-body">
                         <center className="mt-4">
                         <img src={require("./../assets/profile/assets/images/users/paciente.jpg")} alt="Perfil de Juan Bodoque" className="img-circle" width="150" />
-                        <h4 className="card-title mt-2">Juan Bodoque</h4>
+                        <h4 className="card-title mt-2">{dataPaciente.name} {dataPaciente.lastname}</h4>
                         <h6 className="card-subtitle">Paciente</h6>
                         </center>
                     </div>
@@ -163,12 +216,12 @@ function User() {
                 </div>
                 <div className="col-lg-8 col-xlg-9">
                     <div className="card">
-                    <div className="card-body">
+                    <div className="card-body" style={{ maxHeight: '700px', overflowY: 'auto' }} >
                         <form className="form-horizontal form-material mx-2">
                         <div className="form-group">
                             <label className="col-md-12">Nombre Completo</label>
                             <div className="col-md-12">
-                            <input type="text" placeholder="Juan Carlos Bodoque" className="form-control form-control-line" />
+                            {dataPaciente.name} {dataPaciente.lastname}
                             </div>
                         </div>
                         <div className="form-group">
@@ -182,37 +235,35 @@ function User() {
                         <div className="form-group">
                             <label className="col-md-12">Rut</label>
                             <div className="col-md-12">
-                            <input type="text" placeholder="12345678-9"  className="form-control form-control-line" />
+                            {dataPaciente.rut}
                             </div>
                         </div>
                         <div className="form-group">
                             <label className="col-md-12">Telefono</label>
                             <div className="col-md-12">
-                            <input type="text" placeholder="912345678" className="form-control form-control-line" />
+                            {dataPaciente.phone_number}
                             </div>
                         </div>
                         <div className="form-group">
                             <label className="col-md-12">Edad</label>
                             <div className="col-md-12">
-                            <input type="text" placeholder="12" className="form-control form-control-line" />
+                            {calcularEdad(dataPaciente.birthdate)} años
                             </div>
                         </div>
                         <div className="form-group">
                             <label className="col-md-12">Alergias</label>
                             <div className="col-md-12">
-                            <textarea rows="5" placeholder="Paracetamol" className="form-control form-control-line"></textarea>
+                            <ul>
+                                {dataPaciente.allergies.map((alergia, index) => (
+                                    <li key={index}>{alergia}</li>
+                                ))}
+                            </ul>
                             </div>
                         </div>
                         <div className="form-group">
                             <label className="col-sm-12">Tramo Fonasa</label>
                             <div className="col-sm-12">
-                            <select className="form-control form-control-line">
-                                <option>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                                <option>E</option>
-                            </select>
+                            {dataPaciente.fonasa}
                             </div>
                         </div>
 

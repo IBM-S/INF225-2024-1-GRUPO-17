@@ -1,38 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import './../assets/css/Central.css';
 import axios from 'axios';
-//import { fetchPaciente } from '../redux/actions/pacienteActions';
-import { useDispatch } from "react-redux";
+import { mostrarData } from '../redux/actions/dataPacienteActions.js';
+import { useSelector, useDispatch } from "react-redux";
 
 
 function CentralPaciente() {
-  // Estado para almacenar los datos de los pacientes
-  const [pacientes, setPacientes] = useState([]);
   const dispatch = useDispatch();
-  //const paciente_ = useSelector((store) => store.pacienteReducer.rut);
-
+  const dataPaciente = useSelector((store) => store.dataReducer.datas);
+  const isLogged = useSelector((store) => store.authReducer.isLogged);
 
   // Al montar el componente, realiza la solicitud para obtener los datos de los pacientes
   useEffect(() => {
-
-    // Realizar la solicitud para obtener los datos de los pacientes
-    axios.get('http://localhost:8080/patientByRut',{
-      headers: {
-        "auth-token": localStorage.getItem("token"),
-      }
-    })
-      .then(data => {
-        //dispatch(fetchPaciente(data.data));
-
-        // Almacenar los datos de los pacientes en el estado
-        /* console.log('Datos de la API:', data);
-        setPacientes(data); */
+    if (isLogged) {
+      // Realizar la solicitud para obtener los datos de los pacientes
+      axios.get('http://localhost:8080/patientByRut',{
+        headers: {
+          "auth-token": localStorage.getItem("token"),
+        },
       })
-      .catch(error => {
-        // Manejar errores
-        console.error('Error al obtener datos:', error);
+      .then((data) => {
+        console.log(data);
+        dispatch(mostrarData(data.data));
+      })
+      .catch((err) => {
+        console.log(err);
       });
+    }
   }, []);
   
   // Renderiza los datos de los pacientes y los botones
@@ -40,18 +35,22 @@ function CentralPaciente() {
     <div className="central-container">
       <h2>Bienvenido(a)</h2>
 
-      {/* Mostrar los datos de los pacientes si están disponibles */}
-      {pacientes.length > 0 ? (
-        pacientes
-      ) : (
-        <p>Cargando datos...</p>
+      {/* Mostrar la información del paciente */}
+      {dataPaciente && (
+
+        <div>
+          <p>Rut: {dataPaciente.rut}</p>
+          <p>Nombre: {dataPaciente.name}</p>
+          <p>Apellido: {dataPaciente.lastname}</p>
+        </div>
       )}
+
 
       <h3>Seleccione una opción:</h3>
       <Button variant="primary" size="lg" onClick={() => window.location.href = '/MostrarHoraPaciente'}>
         Mostrar Horas Medicas
       </Button>
-      <Button variant="primary" size="lg" onClick={() => window.location.href = '/'}>
+      <Button variant="primary" size="lg" onClick={() => window.location.href = '/AgregarHoraPaciente'}>
         Agregar Hora Medica
       </Button>
       <Button variant="primary" size="lg" onClick={() => window.location.href = '/'}>

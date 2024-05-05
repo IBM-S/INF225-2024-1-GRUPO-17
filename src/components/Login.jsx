@@ -28,49 +28,23 @@
 
 import React, { useState } from 'react';
 
+//Estilos
 import './../assets/css/style_login.css';
+import './../assets/js/script_login.js';
 
 //Nuevos imports
 import axios from 'axios';
-import {Form} from 'react-bootstrap';
+import {Form, Row} from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import {login, logout} from '../redux/actions/authActions.js';
-
-const buttonContainerStyle = {
-	textAlign: 'center',
-};
-
-const buttonStyle = {
-	padding: '10px 20px',
-	backgroundColor: '#212529',
-	color: '#fff',
-	border: 'none',
-	borderRadius: '5px',
-	cursor: 'pointer',
-};
-
-const contenedorStyle = {
-	display: 'flex',
-	flexDirection: 'column',
-	alignItems: 'center',
-	justifyContent: 'center',
-	height: '350px',
-	width: '500px',
-};
-
-const contenedorculiao = {
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	minHeight: '75vh', // Altura mínima de la ventana visible del navegador NO CAMBIAR 
-};
+import {login} from '../redux/actions/authActions.js';
+import Register from './Register.jsx'
 
 
 function Login(props){
 	const [rut, setRut] = useState('');
 	const [password, setPassword] = useState('');
 	const dispatch = useDispatch();
-
+	const [containerStyles, setContainerStyles] = useState({});
 
 	const handleRut = (e) => {
 		setRut(e.target.value);
@@ -80,9 +54,9 @@ function Login(props){
 		setPassword(e.target.value);
 	}
 
-	const handleLogout = (e) => {
-		dispatch(logout());
-	}
+	/* const handleRegister = (e) => {
+		window.location.href = '/Register'
+	} */
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -100,57 +74,78 @@ function Login(props){
             // Maneja los errores si es necesario
             console.error("Error during login:", error);
         });
-		
+	}
+
+	const expandContainer = () => {
+		console.log("AGRANDAR CONTENEDOR");
+		setContainerStyles({ height: '600px', width: '500px', marginTop: '-100px' }); // Al presionar el botón, expande el contenedor culiao
 	}
 	return(
-		<div style={contenedorculiao}>
-			<div style={contenedorStyle}>
-				<div className="container" style={contenedorStyle}>
-					<div className="box"></div>
-						<div className="container-forms" style={{ marginLeft: "-65px" }}>
-							<div className="container-info">
-								<div className="info-item">
-									<div className="table">
-										<div className="table-cell">
-										<div className="btn" style={buttonStyle}>Iniciar sesión</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="container-form">
-							<div style={{ marginLeft: '65px' }}></div>
-								<div className="form-item log-in">
-								<div className="table">
-									<div className="table-cell">
-										{/* Inicio Formulario Nacho Alessandro */}
-										<Form>
-											<Form.Group controlId="formBasicEmail">
-												<Form.Label>Rut</Form.Label>
-												<Form.Control onChange={handleRut} type="rut" placeholder="rut" />
-											</Form.Group>
+		<div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '80vh', marginTop: '90px' }}>
+        <div className="box"></div>
+        <div className="container-forms" >
+          <div className="container-info">
+			{/* Inicio Boton accion Nacho Alessandro */}
+            <div className="info-item">
+              <div className="table">
+                <div className="table-cell">
+                  <p>
+                    Tienes una cuenta?
+                  </p>
+                  <div className="btn" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '45px', width: '150px', border: '1px solid black' }}>
+                    Iniciar sesión
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div className="info-item">
+              <div className="table">
+                <div className="table-cell">
+                  <p>
+                    No tienes una cuenta? 
+                  </p>
+                  <button className="btn" onClick={expandContainer} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '45px', width: '150px', border: '1px solid black' }}>
+                    Registrate
+                  </button>
+                </div>
+              </div>
+            </div>
+			{/* Fin Boton accion Nacho Alessandro */}
+          </div>
+          <div className="container-form" style={containerStyles}>
+            <div className="form-item log-in">
+              <div className="table">
+                <div className="table-cell">
+                    {/* Inicio Formulario Nacho Alessandro */}
+                    <Form>
+                        <Form.Group controlId="formBasicEmail">
+                            <Form.Control onChange={handleRut} type="rut" placeholder="Ej: 12345678-9" />
+                        </Form.Group>
 
-											<Form.Group controlId="formBasicPassword">
-												<Form.Label>Contraseña</Form.Label>
-												<Form.Control onChange={handlePassword} type="contraseña" placeholder="contraseña" />
-											</Form.Group>
-										</Form>
-										<div style={buttonContainerStyle} className="btn-container">
-											<button style={buttonStyle} className="btnboton" onClick={handleSubmit}>
-												Iniciar sesión
-											</button>
-											<button style={buttonStyle} className="btnboton" onClick={handleLogout}>
-												Registrarse
-											</button>
-										</div>
-										{/* Fin Formulario Nacho Alessandro */}
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                        <Form.Group controlId="formBasicPassword">
+                            <Form.Control onChange={handlePassword} type="contraseña" placeholder="Contraseña" />
+                        </Form.Group>
+                    </Form>
+                  <button className="btn"  onClick={handleSubmit} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '45px', width: '150px'}}>
+                    Iniciar
+                  </button>
+                  {/* Fin Formulario Nacho Alessandro */}
+                </div>
+              </div>
+            </div>
+            <div className="form-item sign-up" style={{ width: '500px',  height: '500px'}}>
+              <div className="table">
+                <div className="table-cell">
+					<Row>
+						<Register />
+					</Row>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 	);
 }
 
