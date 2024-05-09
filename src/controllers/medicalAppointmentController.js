@@ -7,7 +7,6 @@ export default class MedicalAppointmentController {
 	async getAll(req, res) {
 		try {
 			const allMedicalAppointments = await MedicalAppointment.findAll();
-			if (!allMedicalAppointments) return res.status(400).send("No existen MedicalAppointments.");
 			res.send(allMedicalAppointments);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener todos los MedicalAppointments.");
@@ -22,7 +21,6 @@ export default class MedicalAppointmentController {
 					id: req.body.id,
 				},
 			});
-			if (!medicalAppointment) return res.status(400).send("MedicalAppointment no existente.");
 			return res.send(medicalAppointment);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener MedicalAppointment a partir de un id.");
@@ -37,7 +35,6 @@ export default class MedicalAppointmentController {
 					rut_patient: req.user.rut
 				},
 			});
-			if (!medicalAppointments) return res.status(400).send("El Patient no tiene MedicalAppointments.");
 			return res.send(medicalAppointments);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener los MedicalAppointments de un Patient.");
@@ -52,7 +49,6 @@ export default class MedicalAppointmentController {
 					exam_type: req.body.exam_type
 				},
 			});
-			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments del tipo ExamType.");
 			return res.send(medicalAppointments);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener los MedicalAppointments del tipo ExamType.");
@@ -67,7 +63,6 @@ export default class MedicalAppointmentController {
 					rut_doctor: req.body.rut_doctor
 				},
 			});
-			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments relacionadas a este Doctor.");
 			return res.send(medicalAppointments);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener los MedicalAppointments a partir de un rut de un Doctor.");
@@ -82,7 +77,6 @@ export default class MedicalAppointmentController {
 					rut_assistant: req.body.rut_assistant
 				},
 			});
-			if (!medicalAppointments) return res.status(400).send("No existen MedicalAppointments relacionadas a este Assistant.");
 			return res.send(medicalAppointments);
 		} catch (error) {
 			res.status(400).send("Error al tratar de obtener los MedicalAppointments a partir de un rut de un Assistant.");
