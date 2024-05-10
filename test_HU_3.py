@@ -51,9 +51,8 @@ class PatientMedicalAppointmetsTests(unittest.TestCase):
 		del cls.patient_login_request_data
 		del cls.patient_delete_request_data
 		del cls.valid_medical_appointment_request_data
-		del cls.invalid_medical_appointment_request_data
 
-	def test_create_valid_medical_appointment(self):
+	def test_valid_delete_medical_appointment(self):
 		response_register = requests.post(self.register_patient_url, json=self.patient_register_request_data)
 		response_login = requests.post(self.login_patient_url, json=self.patient_login_request_data)
 		headers = {
@@ -67,7 +66,7 @@ class PatientMedicalAppointmetsTests(unittest.TestCase):
 		response_delete_patient = requests.delete(self.delete_patient_url, json=self.patient_delete_request_data)
 		self.assertEqual(200, response_delete_medical_appointment.status_code)
 
-	def test_create_invalid_medical_appointment(self):
+	def test_invalid_delete_medical_appointment(self):
 		response_register = requests.post(self.register_patient_url, json=self.patient_register_request_data)
 		response_login = requests.post(self.login_patient_url, json=self.patient_login_request_data)
 		headers = {
