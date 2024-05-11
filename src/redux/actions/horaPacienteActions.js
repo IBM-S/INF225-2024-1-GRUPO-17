@@ -1,6 +1,6 @@
 export const ACTION_FETCH = 'ACTION_FETCH';
 export const ACTION_CREATE = 'ACTION_CREATE';
-export const ACTION_FETCH2 = 'ACTION_FETCH2';
+export const ACTION_UPDATE = 'ACTION_UPDATE';
 
 export const fetchHoras = (horas) => {
 	return {
@@ -16,6 +16,20 @@ export const createHora = (hora) => {
 		type: ACTION_CREATE,
 		payload: {
 			hora: hora,
+		}
+	}
+}
+
+export const updateHora = (horaId, date, start_time, end_time, rut_doctor, rut_assistant) => {
+	return {
+		type: ACTION_UPDATE,
+		payload: {
+			id: horaId,
+			date: date,
+			start_time: start_time,
+			end_time: end_time,
+			rut_doctor: rut_doctor,
+			rut_assistant: rut_assistant,
 		}
 	}
 }
