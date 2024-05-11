@@ -70,7 +70,7 @@ function Register(props) {
 		}).then((data) => {
 			setEstado('OK');
 			console.log(data);
-			window.location.href = '/'
+			window.location.href = '/login'
 		}).catch((error) => {
 			setEstado('ERROR')
             console.log(error);
@@ -123,7 +123,7 @@ function Register(props) {
 		  </Form.Group>
 
 		  <Form.Group>
-            <Button onClick={handleRegister} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '45px', width: '150px', border: '1px solid black' ,  textAlign: 'middle', width: '300px' }}>
+            <Button onClick={handleRegister} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '45px', border: '1px solid black' ,  textAlign: 'middle', width: '300px' }}>
                 Registrarse
             </Button>
 		</Form.Group>
