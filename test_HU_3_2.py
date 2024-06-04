@@ -83,7 +83,10 @@ class PatientMedicalAppointmetsTests(unittest.TestCase):
 		medical_appointment_delete_request_data = {
 			"id": response_create.json()["id"]
 		}
-		response_update = requests.put(self.update_medical_appointment_url, json=(medical_appointment_delete_request_data, self.valid_update_medical_appoinment_request_data), headers=headers)
+		self.valid_update_medical_appoinment_request_data = {
+			"id": response_create.json()["id"]
+		}
+		response_update = requests.put(self.update_medical_appointment_url, json=self.valid_update_medical_appoinment_request_data, headers=headers)
 		response_delete_medical_appointment = requests.delete(self.delete_medical_appointment_url, json=medical_appointment_delete_request_data, headers=headers)
 		response_delete_patient = requests.delete(self.delete_patient_url, json=self.patient_delete_request_data)
 		self.assertEqual(200, response_update.status_code)
@@ -98,7 +101,10 @@ class PatientMedicalAppointmetsTests(unittest.TestCase):
 		medical_appointment_delete_request_data = {
 			"id": response_create.json()["id"]
 		}
-		response_update = requests.put(self.update_medical_appointment_url, json=(medical_appointment_delete_request_data, self.invalid_update_medical_appoinment_request_data), headers=headers)
+		self.valid_update_medical_appoinment_request_data = {
+			"id": response_create.json()["id"]
+		}
+		response_update = requests.put(self.update_medical_appointment_url, json=self.invalid_update_medical_appoinment_request_data, headers=headers)
 		response_delete_medical_appointment = requests.delete(self.delete_medical_appointment_url, json=medical_appointment_delete_request_data, headers=headers)
 		response_delete_patient = requests.delete(self.delete_patient_url, json=self.patient_delete_request_data)
 		self.assertEqual(400, response_update.status_code)
