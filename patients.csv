@@ -1,101 +1,251 @@
 rut,name,lastname,password,birthdate,allergies,fonasa,address,phone_number
-1,Joaquín,Espinoza,1,1994-4-7,Perfumes y fragancias,D,Talca,+56 9 1
-2,Amanda,Rojas,2,1997-9-23,Medicamentos,A,Chillán,+56 9 2
-3,Sebastián,Fernández,3,1998-11-13,Látex,D,Rancagua,+56 9 3
-4,Emilia,Sánchez,4,1996-3-19,Níquel,C,Concepción,+56 9 4
-5,Joaquín,Pérez,5,1994-12-24,Níquel,C,Santiago,+56 9 5
-6,Sebastián,López,6,1999-11-10,Medicamentos,C,Rancagua,+56 9 6
-7,Sebastián,Ramírez,7,1990-3-13,Medicamentos,C,Puerto Montt,+56 9 7
-8,Amanda,Flores,8,1999-3-18,Níquel,D,Valparaíso,+56 9 8
-9,Agustín,González,9,2000-4-17,Polen,B,Valdivia,+56 9 9
-10,Martín,Torres,10,1992-2-8,Medicamentos,C,La Serena,+56 9 10
-11,Antonella,Silva,11,2000-1-24,Níquel,B,Santiago,+56 9 11
-12,Emilia,Torres,12,1998-1-16,Pelo de animales,D,Temuco,+56 9 12
-13,Emilia,López,13,1999-10-19,Polen,D,Talca,+56 9 13
-14,Amanda,Silva,14,1992-4-5,Perfumes y fragancias,D,Concepción,+56 9 14
-15,Maite,Espinoza,15,2000-2-26,Ácaros del polvo,C,Temuco,+56 9 15
-16,Emilia,Torres,16,1995-4-5,Níquel,A,Chillán,+56 9 16
-17,Florencia,Soto,17,1998-11-20,Medicamentos,C,Santiago,+56 9 17
-18,Antonella,Díaz,18,2000-2-29,Pelo de animales,A,Temuco,+56 9 18
-19,Isidora,Flores,19,1998-11-17,Perfumes y fragancias,D,Temuco,+56 9 19
-20,Santiago,Ramírez,20,1996-2-15,Ácaros del polvo,C,Antofagasta,+56 9 20
-21,Agustín,Contreras,21,1998-4-19,Látex,C,Chillán,+56 9 21
-22,Emma,Herrera,22,1996-8-17,Picaduras de insectos,C,Puerto Montt,+56 9 22
-23,Benjamín,Valenzuela,23,2000-1-26,Medicamentos,B,Talca,+56 9 23
-24,Martín,Valenzuela,24,1999-3-4,Látex,A,Iquique,+56 9 24
-25,Agustín,Castro,25,1992-3-6,Perfumes y fragancias,C,Chillán,+56 9 25
-26,Josefa,Ramírez,26,1998-3-19,Picaduras de insectos,A,Concepción,+56 9 26
-27,Josefa,Flores,27,1991-6-12,Látex,C,Concepción,+56 9 27
-28,Sofía,Sánchez,28,1990-9-21,Pelo de animales,D,Punta Arenas,+56 9 28
-29,Sebastián,Muñoz,29,1992-4-14,Ácaros del polvo,A,Concepción,+56 9 29
-30,Sofía,Flores,30,1990-2-3,Medicamentos,B,Arica,+56 9 30
-31,Sebastián,Pérez,31,1992-4-1,Alimentos,C,Arica,+56 9 31
-32,Vicente,Herrera,32,1994-3-23,Polen,D,Arica,+56 9 32
-33,Amanda,González,33,1998-12-10,Alimentos,A,Valdivia,+56 9 33
-34,Benjamín,Díaz,34,1994-8-2,Perfumes y fragancias,C,Talca,+56 9 34
-35,Florencia,Rodríguez,35,1998-8-27,Alimentos,B,Concepción,+56 9 35
-36,Martina,Díaz,36,1996-5-15,Medicamentos,B,Chillán,+56 9 36
-37,Josefa,Díaz,37,1993-9-29,Pelo de animales,D,Rancagua,+56 9 37
-38,Vicente,Soto,38,1997-12-25,Polen,A,Talca,+56 9 38
-39,Emilia,Muñoz,39,1994-9-7,Picaduras de insectos,D,Rancagua,+56 9 39
-40,Martina,Torres,40,2000-2-6,Picaduras de insectos,C,Puerto Montt,+56 9 40
-41,Sebastián,Soto,41,2000-7-16,Látex,D,Rancagua,+56 9 41
-42,Mateo,Valenzuela,42,1996-9-14,Níquel,C,Antofagasta,+56 9 42
-43,Vicente,Espinoza,43,1994-11-26,Látex,D,Iquique,+56 9 43
-44,Isidora,Herrera,44,1996-2-17,Medicamentos,C,Valparaíso,+56 9 44
-45,Florencia,Soto,45,1992-8-3,Ácaros del polvo,B,Punta Arenas,+56 9 45
-46,Josefa,Ramírez,46,1999-10-9,Látex,D,La Serena,+56 9 46
-47,Benjamín,Soto,47,1995-11-24,Níquel,B,Antofagasta,+56 9 47
-48,Benjamín,Rodríguez,48,2000-4-5,Polen,D,Santiago,+56 9 48
-49,Sofía,Martínez,49,1992-9-24,Alimentos,B,Puerto Montt,+56 9 49
-50,Vicente,Castro,50,1997-2-10,Picaduras de insectos,C,Talca,+56 9 50
-51,Sofía,Soto,51,1996-6-1,Ácaros del polvo,D,Viña del Mar,+56 9 51
-52,Emma,Martínez,52,1991-6-10,Medicamentos,A,Chillán,+56 9 52
-53,Maite,Martínez,53,1994-10-26,Níquel,C,Viña del Mar,+56 9 53
-54,Vicente,Rojas,54,1993-8-10,Látex,C,Arica,+56 9 54
-55,Florencia,Pérez,55,1996-8-8,Alimentos,A,Valdivia,+56 9 55
-56,Sofía,Fernández,56,1993-2-12,Picaduras de insectos,A,Chillán,+56 9 56
-57,Santiago,Espinoza,57,1997-2-14,Alimentos,D,Puerto Montt,+56 9 57
-58,Josefa,López,58,1990-3-27,Moho,A,Talca,+56 9 58
-59,Florencia,Díaz,59,1992-3-13,Picaduras de insectos,B,Santiago,+56 9 59
-60,Josefa,Ramírez,60,1993-7-1,Ácaros del polvo,C,Iquique,+56 9 60
-61,Benjamín,Contreras,61,1997-4-24,Perfumes y fragancias,A,Valdivia,+56 9 61
-62,Santiago,Torres,62,1997-5-24,Pelo de animales,A,Antofagasta,+56 9 62
-63,Amanda,Martínez,63,1995-2-26,Níquel,B,Santiago,+56 9 63
-64,Florencia,Espinoza,64,1990-3-19,Látex,A,Valdivia,+56 9 64
-65,Maite,Flores,65,1991-3-12,Pelo de animales,A,Valparaíso,+56 9 65
-66,Vicente,Fernández,66,1996-6-15,Látex,A,Puerto Montt,+56 9 66
-67,Amanda,Espinoza,67,1997-5-6,Polen,D,Chillán,+56 9 67
-68,Emma,Muñoz,68,1994-7-10,Polen,C,Chillán,+56 9 68
-69,Emma,Muñoz,69,1995-11-15,Perfumes y fragancias,D,Iquique,+56 9 69
-70,Agustín,Contreras,70,1991-7-26,Moho,D,Antofagasta,+56 9 70
-71,Antonella,Rodríguez,71,1992-4-1,Ácaros del polvo,C,Arica,+56 9 71
-72,Amanda,Ramírez,72,1993-2-10,Medicamentos,D,Iquique,+56 9 72
-73,Josefa,Torres,73,1998-10-11,Pelo de animales,A,Santiago,+56 9 73
-74,Martín,Díaz,74,1998-2-27,Perfumes y fragancias,B,Valparaíso,+56 9 74
-75,Martina,Ramírez,75,1993-6-14,Látex,B,Talca,+56 9 75
-76,Florencia,Muñoz,76,1992-8-21,Pelo de animales,B,Valparaíso,+56 9 76
-77,Santiago,Espinoza,77,1991-5-28,Polen,C,Arica,+56 9 77
-78,Lucas,Martínez,78,1990-8-21,Medicamentos,C,Puerto Montt,+56 9 78
-79,Josefa,Martínez,79,1990-6-4,Medicamentos,B,Valparaíso,+56 9 79
-80,Amanda,González,80,1995-7-2,Látex,D,Puerto Montt,+56 9 80
-81,Maite,Rodríguez,81,1990-8-25,Picaduras de insectos,D,Iquique,+56 9 81
-82,Vicente,Díaz,82,1998-2-13,Moho,D,Chillán,+56 9 82
-83,Lucas,Silva,83,1997-1-24,Níquel,D,Antofagasta,+56 9 83
-84,Josefa,Rodríguez,84,1995-12-20,Alimentos,B,Punta Arenas,+56 9 84
-85,Benjamín,Castro,85,1993-2-28,Pelo de animales,D,Temuco,+56 9 85
-86,Benjamín,Martínez,86,1992-7-18,Moho,B,Valdivia,+56 9 86
-87,Florencia,Flores,87,1994-9-18,Pelo de animales,C,Arica,+56 9 87
-88,Antonella,Soto,88,1995-11-13,Látex,A,Rancagua,+56 9 88
-89,Amanda,Torres,89,1999-2-12,Ácaros del polvo,C,Antofagasta,+56 9 89
-90,Emilia,Díaz,90,1992-10-10,Polen,A,Concepción,+56 9 90
-91,Isidora,López,91,1990-12-29,Picaduras de insectos,B,Punta Arenas,+56 9 91
-92,Maite,Díaz,92,1993-4-12,Níquel,B,Santiago,+56 9 92
-93,Emma,Muñoz,93,2000-11-23,Perfumes y fragancias,A,Puerto Montt,+56 9 93
-94,Florencia,Espinoza,94,1990-10-28,Látex,B,Viña del Mar,+56 9 94
-95,Joaquín,Silva,95,1995-12-17,Medicamentos,B,Valparaíso,+56 9 95
-96,Maite,Valenzuela,96,1997-2-13,Alimentos,C,Concepción,+56 9 96
-97,Sebastián,Rojas,97,1996-10-1,Medicamentos,C,Talca,+56 9 97
-98,Joaquín,Herrera,98,1993-2-18,Perfumes y fragancias,A,Santiago,+56 9 98
-99,Emilia,López,99,1997-2-20,Látex,C,Iquique,+56 9 99
-100,Agustín,Fernández,100,1992-8-7,Alimentos,A,Talca,+56 9 100
+1,Matías,Castro,1,1992-5-23,Pelo de animales,A,Valparaíso,+56 9 1
+2,Benjamín,López,2,1996-12-1,Moho,C,Talca,+56 9 2
+3,Lucas,Valenzuela,3,1993-10-17,Pelo de animales,B,Chillán,+56 9 3
+4,Antonella,Rojas,4,1994-10-24,Ácaros del polvo,A,La Serena,+56 9 4
+5,Antonella,Silva,5,1990-9-19,Pelo de animales,A,Iquique,+56 9 5
+6,Isidora,Fernández,6,1997-5-21,Moho,B,La Serena,+56 9 6
+7,Santiago,Sánchez,7,1997-1-26,Polen,C,Viña del Mar,+56 9 7
+8,Emma,Fernández,8,1998-10-6,Moho,A,La Serena,+56 9 8
+9,Martina,Silva,9,1992-3-10,Ácaros del polvo,A,Valdivia,+56 9 9
+10,Antonella,Castro,10,1995-5-20,Pelo de animales,D,Valdivia,+56 9 10
+11,Emma,Martínez,11,2000-1-28,Alimentos,B,Antofagasta,+56 9 11
+12,Vicente,Herrera,12,1999-11-10,Polen,D,Puerto Montt,+56 9 12
+13,Amanda,Flores,13,1993-9-27,Pelo de animales,C,Puerto Montt,+56 9 13
+14,Mateo,Contreras,14,2000-8-23,Ácaros del polvo,C,Viña del Mar,+56 9 14
+15,Florencia,Muñoz,15,2000-1-1,Níquel,B,Rancagua,+56 9 15
+16,Martín,Ramírez,16,1994-9-25,Níquel,B,Viña del Mar,+56 9 16
+17,Agustín,Fernández,17,1998-9-16,Moho,B,Iquique,+56 9 17
+18,Emilia,Muñoz,18,1992-1-10,Perfumes y fragancias,D,Rancagua,+56 9 18
+19,Amanda,Ramírez,19,2000-6-11,Pelo de animales,A,Valparaíso,+56 9 19
+20,Sebastián,Muñoz,20,1991-5-24,Picaduras de insectos,D,Valdivia,+56 9 20
+21,Emilia,Ramírez,21,1999-10-23,Medicamentos,C,Viña del Mar,+56 9 21
+22,Mateo,Rojas,22,1997-7-8,Moho,A,Valdivia,+56 9 22
+23,Sebastián,Sánchez,23,1991-3-17,Ácaros del polvo,D,Valparaíso,+56 9 23
+24,Josefa,Rojas,24,1993-6-4,Moho,A,La Serena,+56 9 24
+25,Antonella,López,25,1993-10-21,Moho,D,La Serena,+56 9 25
+26,Florencia,Flores,26,1994-2-16,Ácaros del polvo,D,Viña del Mar,+56 9 26
+27,Sebastián,Fernández,27,1991-9-6,Alimentos,C,Arica,+56 9 27
+28,Maite,Herrera,28,1999-10-21,Medicamentos,C,Puerto Montt,+56 9 28
+29,Martín,Silva,29,1998-6-26,Medicamentos,B,Viña del Mar,+56 9 29
+30,Vicente,Valenzuela,30,1994-12-13,Níquel,A,Arica,+56 9 30
+31,Mateo,Muñoz,31,1996-5-2,Pelo de animales,A,Chillán,+56 9 31
+32,Sofía,Ramírez,32,1999-2-20,Ácaros del polvo,D,La Serena,+56 9 32
+33,Antonella,Ramírez,33,1999-7-11,Níquel,D,Santiago,+56 9 33
+34,Antonella,López,34,1998-12-25,Perfumes y fragancias,D,Antofagasta,+56 9 34
+35,Antonella,Rojas,35,1992-9-13,Picaduras de insectos,C,Iquique,+56 9 35
+36,Benjamín,Castro,36,1991-7-26,Moho,B,La Serena,+56 9 36
+37,Joaquín,Muñoz,37,2000-1-17,Polen,D,La Serena,+56 9 37
+38,Santiago,Rojas,38,1997-2-21,Medicamentos,A,Viña del Mar,+56 9 38
+39,Joaquín,Valenzuela,39,1998-5-12,Polen,C,Chillán,+56 9 39
+40,Joaquín,Soto,40,1997-1-29,Ácaros del polvo,A,Chillán,+56 9 40
+41,Isidora,Fernández,41,1996-2-7,Picaduras de insectos,B,Rancagua,+56 9 41
+42,Agustín,Valenzuela,42,1993-6-23,Pelo de animales,A,Puerto Montt,+56 9 42
+43,Emilia,Rodríguez,43,1991-3-11,Níquel,C,La Serena,+56 9 43
+44,Martina,Martínez,44,1992-12-11,Polen,A,Santiago,+56 9 44
+45,Lucas,Castro,45,1995-1-3,Perfumes y fragancias,A,Viña del Mar,+56 9 45
+46,Maite,Silva,46,1996-5-26,Níquel,C,Antofagasta,+56 9 46
+47,Emilia,Pérez,47,1995-8-15,Alimentos,D,Valparaíso,+56 9 47
+48,Amanda,Contreras,48,1995-11-2,Perfumes y fragancias,D,Valparaíso,+56 9 48
+49,Sebastián,Rojas,49,1996-9-11,Ácaros del polvo,B,Iquique,+56 9 49
+50,Matías,Herrera,50,1996-7-12,Perfumes y fragancias,A,Antofagasta,+56 9 50
+51,Florencia,Martínez,51,1992-2-13,Ácaros del polvo,A,Concepción,+56 9 51
+52,Matías,López,52,1990-3-16,Ácaros del polvo,D,Arica,+56 9 52
+53,Amanda,Pérez,53,1998-1-23,Polen,D,Rancagua,+56 9 53
+54,Matías,Castro,54,2000-9-14,Medicamentos,C,Iquique,+56 9 54
+55,Antonella,Rojas,55,1995-10-21,Polen,A,Temuco,+56 9 55
+56,Emilia,Rodríguez,56,1992-10-12,Polen,B,Concepción,+56 9 56
+57,Benjamín,Flores,57,1992-6-25,Níquel,C,La Serena,+56 9 57
+58,Sofía,Valenzuela,58,1994-7-16,Perfumes y fragancias,C,Punta Arenas,+56 9 58
+59,Mateo,Fernández,59,1990-12-6,Látex,C,Valparaíso,+56 9 59
+60,Benjamín,Ramírez,60,1991-5-20,Pelo de animales,D,Punta Arenas,+56 9 60
+61,Florencia,Espinoza,61,1991-6-19,Medicamentos,D,Chillán,+56 9 61
+62,Martín,Torres,62,1991-6-20,Pelo de animales,C,La Serena,+56 9 62
+63,Sofía,Fernández,63,1997-10-14,Pelo de animales,A,Santiago,+56 9 63
+64,Florencia,Herrera,64,1997-11-15,Níquel,C,Santiago,+56 9 64
+65,Santiago,Valenzuela,65,1991-4-19,Alimentos,B,Arica,+56 9 65
+66,Isidora,Fernández,66,1992-3-27,Picaduras de insectos,B,Puerto Montt,+56 9 66
+67,Maite,Torres,67,1992-12-2,Ácaros del polvo,D,Talca,+56 9 67
+68,Sebastián,Ramírez,68,1992-11-8,Ácaros del polvo,A,Rancagua,+56 9 68
+69,Matías,Rojas,69,1995-3-18,Picaduras de insectos,A,Chillán,+56 9 69
+70,Antonella,Ramírez,70,1996-4-7,Polen,B,Santiago,+56 9 70
+71,Sofía,Rojas,71,1993-5-2,Látex,B,Concepción,+56 9 71
+72,Amanda,González,72,1995-7-26,Perfumes y fragancias,C,Punta Arenas,+56 9 72
+73,Antonella,Soto,73,1998-7-5,Perfumes y fragancias,A,Punta Arenas,+56 9 73
+74,Antonella,López,74,1999-8-2,Látex,A,Iquique,+56 9 74
+75,Sebastián,Sánchez,75,1996-10-15,Perfumes y fragancias,B,Chillán,+56 9 75
+76,Agustín,Muñoz,76,2000-3-2,Medicamentos,D,La Serena,+56 9 76
+77,Lucas,Fernández,77,2000-6-16,Alimentos,D,Santiago,+56 9 77
+78,Matías,López,78,1999-9-25,Picaduras de insectos,B,Puerto Montt,+56 9 78
+79,Agustín,Rodríguez,79,1996-11-8,Alimentos,A,Concepción,+56 9 79
+80,Josefa,Rojas,80,1998-5-1,Perfumes y fragancias,D,Antofagasta,+56 9 80
+81,Emma,Sánchez,81,2000-11-29,Ácaros del polvo,B,Chillán,+56 9 81
+82,Vicente,Contreras,82,1996-1-29,Níquel,D,Arica,+56 9 82
+83,Lucas,González,83,1992-8-24,Pelo de animales,B,Viña del Mar,+56 9 83
+84,Joaquín,Ramírez,84,1990-7-28,Látex,C,Santiago,+56 9 84
+85,Isidora,Fernández,85,1995-10-22,Perfumes y fragancias,C,Punta Arenas,+56 9 85
+86,Emma,Soto,86,1998-10-10,Picaduras de insectos,D,La Serena,+56 9 86
+87,Isidora,Díaz,87,1998-9-24,Moho,A,Concepción,+56 9 87
+88,Lucas,Martínez,88,1996-5-23,Medicamentos,C,Antofagasta,+56 9 88
+89,Antonella,Torres,89,1992-6-11,Medicamentos,D,Santiago,+56 9 89
+90,Mateo,Sánchez,90,1996-5-5,Níquel,A,Chillán,+56 9 90
+91,Santiago,Fernández,91,1996-3-12,Medicamentos,B,Iquique,+56 9 91
+92,Agustín,Castro,92,1997-10-5,Alimentos,D,Puerto Montt,+56 9 92
+93,Martina,Pérez,93,1997-11-9,Níquel,B,Santiago,+56 9 93
+94,Sebastián,Rojas,94,1998-2-19,Polen,B,Antofagasta,+56 9 94
+95,Agustín,Martínez,95,1993-4-11,Moho,B,Talca,+56 9 95
+96,Martín,Rojas,96,1999-8-5,Perfumes y fragancias,D,Punta Arenas,+56 9 96
+97,Lucas,Valenzuela,97,1993-6-24,Níquel,B,Chillán,+56 9 97
+98,Florencia,Castro,98,1997-5-4,Moho,C,Puerto Montt,+56 9 98
+99,Martina,Muñoz,99,1992-1-5,Látex,C,Punta Arenas,+56 9 99
+100,Emilia,López,100,1996-10-8,Níquel,D,Punta Arenas,+56 9 100
+101,Martín,Soto,101,2000-6-20,Moho,C,Talca,+56 9 101
+102,Emma,Soto,102,1994-7-22,Picaduras de insectos,C,Viña del Mar,+56 9 102
+103,Isidora,Flores,103,2000-7-22,Ácaros del polvo,D,Antofagasta,+56 9 103
+104,Martina,Rodríguez,104,1991-8-27,Ácaros del polvo,D,La Serena,+56 9 104
+105,Vicente,Contreras,105,1993-7-28,Pelo de animales,B,Talca,+56 9 105
+106,Sebastián,Rojas,106,1998-7-26,Pelo de animales,D,Punta Arenas,+56 9 106
+107,Martín,Díaz,107,1993-2-21,Pelo de animales,B,Valdivia,+56 9 107
+108,Sofía,Rodríguez,108,1992-9-27,Polen,B,Valparaíso,+56 9 108
+109,Lucas,Torres,109,1998-4-9,Medicamentos,C,Antofagasta,+56 9 109
+110,Lucas,Torres,110,1991-11-17,Látex,B,Temuco,+56 9 110
+111,Emilia,Fernández,111,1991-2-9,Polen,D,Temuco,+56 9 111
+112,Florencia,Contreras,112,1998-3-23,Perfumes y fragancias,B,Viña del Mar,+56 9 112
+113,Florencia,Ramírez,113,1992-6-17,Polen,A,La Serena,+56 9 113
+114,Maite,Castro,114,1990-8-24,Ácaros del polvo,C,Valparaíso,+56 9 114
+115,Josefa,Rojas,115,1999-2-21,Alimentos,D,Puerto Montt,+56 9 115
+116,Benjamín,Valenzuela,116,1993-2-7,Pelo de animales,B,Talca,+56 9 116
+117,Florencia,Muñoz,117,1992-10-7,Picaduras de insectos,D,La Serena,+56 9 117
+118,Vicente,Pérez,118,1990-9-22,Alimentos,C,Concepción,+56 9 118
+119,Vicente,Pérez,119,1992-4-3,Moho,A,Talca,+56 9 119
+120,Mateo,López,120,1994-3-9,Látex,B,Chillán,+56 9 120
+121,Isidora,Rojas,121,1990-1-7,Níquel,D,Punta Arenas,+56 9 121
+122,Santiago,Espinoza,122,1991-9-4,Medicamentos,C,Iquique,+56 9 122
+123,Mateo,Contreras,123,1990-3-29,Perfumes y fragancias,B,Santiago,+56 9 123
+124,Lucas,Fernández,124,2000-3-10,Polen,B,Santiago,+56 9 124
+125,Joaquín,Flores,125,1996-8-18,Pelo de animales,D,Antofagasta,+56 9 125
+126,Antonella,Herrera,126,2000-3-7,Moho,D,Chillán,+56 9 126
+127,Antonella,Rojas,127,2000-11-27,Níquel,D,Chillán,+56 9 127
+128,Florencia,González,128,1990-11-19,Picaduras de insectos,A,Talca,+56 9 128
+129,Amanda,Martínez,129,1994-2-3,Ácaros del polvo,C,Valdivia,+56 9 129
+130,Martina,Ramírez,130,1996-12-18,Níquel,D,Santiago,+56 9 130
+131,Benjamín,Torres,131,1993-2-12,Polen,C,Antofagasta,+56 9 131
+132,Matías,Castro,132,1995-4-25,Polen,A,Viña del Mar,+56 9 132
+133,Benjamín,Espinoza,133,1991-4-21,Polen,D,Valparaíso,+56 9 133
+134,Sofía,Ramírez,134,1992-9-14,Perfumes y fragancias,B,Temuco,+56 9 134
+135,Martín,Sánchez,135,1992-11-29,Perfumes y fragancias,A,Concepción,+56 9 135
+136,Agustín,Espinoza,136,1999-7-7,Pelo de animales,D,Viña del Mar,+56 9 136
+137,Florencia,Silva,137,1996-6-25,Níquel,D,Chillán,+56 9 137
+138,Matías,Pérez,138,1997-7-29,Polen,C,La Serena,+56 9 138
+139,Mateo,Martínez,139,1996-8-8,Medicamentos,A,Santiago,+56 9 139
+140,Emilia,González,140,1993-10-5,Picaduras de insectos,A,Valdivia,+56 9 140
+141,Florencia,Castro,141,1995-4-19,Polen,B,Iquique,+56 9 141
+142,Sebastián,Muñoz,142,1997-3-2,Ácaros del polvo,B,Rancagua,+56 9 142
+143,Florencia,Muñoz,143,1998-1-21,Látex,D,Valparaíso,+56 9 143
+144,Martín,Martínez,144,1993-1-16,Ácaros del polvo,A,Arica,+56 9 144
+145,Mateo,Espinoza,145,1998-3-3,Moho,D,Valdivia,+56 9 145
+146,Lucas,Díaz,146,1995-8-29,Medicamentos,D,Valdivia,+56 9 146
+147,Antonella,Soto,147,1998-12-6,Medicamentos,D,La Serena,+56 9 147
+148,Amanda,Contreras,148,1996-12-15,Polen,B,Antofagasta,+56 9 148
+149,Joaquín,Rojas,149,1993-5-13,Pelo de animales,A,Temuco,+56 9 149
+150,Matías,Rodríguez,150,1999-11-4,Pelo de animales,D,La Serena,+56 9 150
+151,Florencia,Fernández,151,1997-4-14,Ácaros del polvo,A,Viña del Mar,+56 9 151
+152,Emilia,Herrera,152,1992-10-16,Moho,C,La Serena,+56 9 152
+153,Mateo,González,153,1995-7-29,Níquel,B,Talca,+56 9 153
+154,Isidora,Rodríguez,154,1990-5-11,Alimentos,C,Santiago,+56 9 154
+155,Joaquín,Flores,155,1996-5-10,Ácaros del polvo,C,Antofagasta,+56 9 155
+156,Mateo,Castro,156,1992-6-18,Perfumes y fragancias,A,Chillán,+56 9 156
+157,Florencia,Contreras,157,1992-6-17,Medicamentos,D,Punta Arenas,+56 9 157
+158,Mateo,Pérez,158,1996-5-14,Ácaros del polvo,C,Punta Arenas,+56 9 158
+159,Sofía,Rojas,159,1998-5-24,Medicamentos,A,Antofagasta,+56 9 159
+160,Florencia,Sánchez,160,1992-10-5,Alimentos,A,Antofagasta,+56 9 160
+161,Lucas,Castro,161,1993-10-18,Perfumes y fragancias,A,Valdivia,+56 9 161
+162,Isidora,Pérez,162,1994-4-3,Moho,A,Rancagua,+56 9 162
+163,Santiago,Castro,163,1993-2-3,Alimentos,D,Chillán,+56 9 163
+164,Isidora,López,164,1995-3-10,Polen,A,Puerto Montt,+56 9 164
+165,Santiago,López,165,1993-1-11,Perfumes y fragancias,A,Puerto Montt,+56 9 165
+166,Vicente,González,166,1994-7-22,Moho,B,Antofagasta,+56 9 166
+167,Joaquín,Castro,167,1991-6-25,Níquel,A,Rancagua,+56 9 167
+168,Santiago,López,168,1992-12-28,Látex,B,Rancagua,+56 9 168
+169,Martín,Contreras,169,1999-6-5,Látex,D,Santiago,+56 9 169
+170,Maite,Soto,170,1997-1-19,Alimentos,B,Puerto Montt,+56 9 170
+171,Santiago,Rojas,171,1999-12-9,Níquel,D,Puerto Montt,+56 9 171
+172,Maite,Contreras,172,2000-11-2,Perfumes y fragancias,A,Rancagua,+56 9 172
+173,Santiago,Rodríguez,173,2000-11-5,Ácaros del polvo,D,Viña del Mar,+56 9 173
+174,Antonella,Muñoz,174,1992-9-16,Moho,D,Punta Arenas,+56 9 174
+175,Lucas,Pérez,175,1998-12-14,Perfumes y fragancias,A,Chillán,+56 9 175
+176,Isidora,Díaz,176,2000-11-22,Moho,D,La Serena,+56 9 176
+177,Martina,González,177,1993-8-19,Látex,D,Rancagua,+56 9 177
+178,Florencia,Contreras,178,1990-1-23,Medicamentos,B,Antofagasta,+56 9 178
+179,Amanda,Rodríguez,179,1995-8-11,Picaduras de insectos,C,Concepción,+56 9 179
+180,Martín,Sánchez,180,1998-1-20,Níquel,C,Valdivia,+56 9 180
+181,Amanda,Díaz,181,1994-2-9,Látex,B,Temuco,+56 9 181
+182,Martina,González,182,1999-5-10,Perfumes y fragancias,D,Valdivia,+56 9 182
+183,Lucas,López,183,1992-2-12,Látex,A,Temuco,+56 9 183
+184,Amanda,Soto,184,1990-3-23,Moho,B,Arica,+56 9 184
+185,Joaquín,Espinoza,185,1993-5-21,Perfumes y fragancias,D,Chillán,+56 9 185
+186,Isidora,Díaz,186,1992-5-7,Medicamentos,C,Valparaíso,+56 9 186
+187,Emilia,Díaz,187,1993-7-1,Alimentos,C,Talca,+56 9 187
+188,Agustín,López,188,1996-4-14,Medicamentos,A,La Serena,+56 9 188
+189,Amanda,Muñoz,189,2000-11-13,Ácaros del polvo,C,Concepción,+56 9 189
+190,Emma,Pérez,190,2000-2-1,Picaduras de insectos,B,Viña del Mar,+56 9 190
+191,Lucas,Rodríguez,191,1996-3-5,Moho,A,Temuco,+56 9 191
+192,Vicente,Ramírez,192,2000-11-19,Moho,D,Rancagua,+56 9 192
+193,Agustín,Silva,193,1993-3-17,Ácaros del polvo,D,Rancagua,+56 9 193
+194,Santiago,Valenzuela,194,1993-2-9,Picaduras de insectos,B,Rancagua,+56 9 194
+195,Isidora,Ramírez,195,1999-2-13,Medicamentos,C,Talca,+56 9 195
+196,Benjamín,Espinoza,196,1995-6-19,Perfumes y fragancias,B,Iquique,+56 9 196
+197,Agustín,Torres,197,1992-7-29,Moho,B,Temuco,+56 9 197
+198,Agustín,Rodríguez,198,1994-9-20,Ácaros del polvo,B,Chillán,+56 9 198
+199,Isidora,Espinoza,199,1990-6-9,Ácaros del polvo,C,Chillán,+56 9 199
+200,Santiago,Castro,200,1991-6-10,Níquel,A,Chillán,+56 9 200
+201,Santiago,Torres,201,1992-9-21,Alimentos,C,La Serena,+56 9 201
+202,Isidora,Silva,202,1991-9-21,Medicamentos,A,Punta Arenas,+56 9 202
+203,Emma,González,203,1998-2-16,Medicamentos,D,Punta Arenas,+56 9 203
+204,Matías,Rodríguez,204,2000-6-19,Níquel,B,Viña del Mar,+56 9 204
+205,Agustín,González,205,1997-4-9,Picaduras de insectos,D,Chillán,+56 9 205
+206,Matías,Contreras,206,1990-2-24,Medicamentos,B,La Serena,+56 9 206
+207,Vicente,Díaz,207,1990-12-22,Alimentos,B,Arica,+56 9 207
+208,Lucas,Valenzuela,208,1990-5-19,Pelo de animales,B,Valdivia,+56 9 208
+209,Matías,Castro,209,1994-11-9,Látex,A,Concepción,+56 9 209
+210,Vicente,Silva,210,1997-6-4,Níquel,A,Arica,+56 9 210
+211,Joaquín,Valenzuela,211,1993-1-24,Picaduras de insectos,A,Temuco,+56 9 211
+212,Joaquín,Rodríguez,212,1997-9-16,Ácaros del polvo,A,Puerto Montt,+56 9 212
+213,Antonella,Pérez,213,1997-3-16,Perfumes y fragancias,A,Chillán,+56 9 213
+214,Santiago,Torres,214,1992-5-23,Perfumes y fragancias,C,Viña del Mar,+56 9 214
+215,Isidora,López,215,1991-6-28,Perfumes y fragancias,D,Puerto Montt,+56 9 215
+216,Maite,Rojas,216,1993-6-6,Picaduras de insectos,B,Chillán,+56 9 216
+217,Sofía,Silva,217,1993-3-9,Pelo de animales,D,Puerto Montt,+56 9 217
+218,Josefa,Contreras,218,1995-12-15,Pelo de animales,D,Arica,+56 9 218
+219,Florencia,Ramírez,219,1992-10-4,Medicamentos,C,Valparaíso,+56 9 219
+220,Amanda,Sánchez,220,1997-3-5,Moho,A,Talca,+56 9 220
+221,Emma,González,221,1994-3-12,Picaduras de insectos,B,Talca,+56 9 221
+222,Joaquín,Muñoz,222,1998-10-9,Medicamentos,A,Talca,+56 9 222
+223,Matías,Pérez,223,1994-2-15,Látex,B,Talca,+56 9 223
+224,Emma,Sánchez,224,2000-3-23,Perfumes y fragancias,C,Viña del Mar,+56 9 224
+225,Josefa,González,225,1990-2-19,Ácaros del polvo,A,La Serena,+56 9 225
+226,Emilia,Herrera,226,1997-2-22,Polen,D,Punta Arenas,+56 9 226
+227,Matías,Sánchez,227,1996-2-22,Ácaros del polvo,C,Chillán,+56 9 227
+228,Mateo,Espinoza,228,2000-1-19,Medicamentos,B,Antofagasta,+56 9 228
+229,Joaquín,Rojas,229,1993-11-27,Polen,A,La Serena,+56 9 229
+230,Agustín,Valenzuela,230,1992-10-19,Perfumes y fragancias,A,Valparaíso,+56 9 230
+231,Benjamín,Flores,231,1992-1-24,Moho,D,Antofagasta,+56 9 231
+232,Lucas,González,232,1995-4-29,Pelo de animales,D,Rancagua,+56 9 232
+233,Josefa,Díaz,233,1993-12-19,Picaduras de insectos,C,Santiago,+56 9 233
+234,Isidora,Ramírez,234,1995-4-26,Medicamentos,D,Arica,+56 9 234
+235,Florencia,Fernández,235,1991-7-10,Pelo de animales,A,Punta Arenas,+56 9 235
+236,Joaquín,Silva,236,1995-4-11,Alimentos,B,Chillán,+56 9 236
+237,Matías,Ramírez,237,1994-10-29,Pelo de animales,D,Antofagasta,+56 9 237
+238,Sofía,Díaz,238,1994-6-8,Látex,A,Talca,+56 9 238
+239,Lucas,Ramírez,239,2000-2-9,Pelo de animales,B,Santiago,+56 9 239
+240,Maite,Martínez,240,1991-6-19,Picaduras de insectos,A,Iquique,+56 9 240
+241,Maite,Silva,241,1997-7-9,Níquel,B,Talca,+56 9 241
+242,Martina,Fernández,242,1994-2-20,Perfumes y fragancias,B,Antofagasta,+56 9 242
+243,Benjamín,González,243,2000-1-1,Níquel,C,Puerto Montt,+56 9 243
+244,Emilia,Fernández,244,1999-3-25,Perfumes y fragancias,C,Chillán,+56 9 244
+245,Vicente,Herrera,245,1994-12-26,Ácaros del polvo,D,Chillán,+56 9 245
+246,Sofía,Espinoza,246,1991-4-21,Moho,A,Viña del Mar,+56 9 246
+247,Matías,Rodríguez,247,2000-12-9,Ácaros del polvo,B,Viña del Mar,+56 9 247
+248,Martín,Fernández,248,1993-4-23,Medicamentos,C,Chillán,+56 9 248
+249,Mateo,Ramírez,249,1999-9-4,Ácaros del polvo,C,Viña del Mar,+56 9 249
+250,Antonella,Valenzuela,250,1995-1-11,Látex,C,Iquique,+56 9 250

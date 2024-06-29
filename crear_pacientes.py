@@ -92,7 +92,7 @@ csv_file = "patients.csv"
 
 fieldnames = ['rut', 'name', 'lastname', 'password', 'birthdate', 'allergies', 'fonasa', 'address', 'phone_number']
 
-for i in range(1,101):
+for i in range(1,251):
 	rut = str(i)
 	name = random.choice(names)
 	lastname = random.choice(lastnames)
