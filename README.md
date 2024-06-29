@@ -8,7 +8,7 @@ En esta Branch se encuentran todos los archivos que se utilizaron para realizar 
 * patients.csv: archivo csv con datos de pacientes aleatorios validos para la BD.
 * workers.csv: archivo csv con datos de trabajadores aleatorios validos para la BD.
 
-Todos los modulos del plan de carga realizado toman en cuenta un bombeardeo de 100 usuarios en un intervalo de 30 segundos, ademas de que el tiempo maximo considerado para
+Todos los modulos del plan de carga realizado toman en cuenta un bombeardeo de 250 usuarios en un intervalo de 30 segundos, ademas de que el tiempo maximo considerado para
 entregar una respuesta sera de 1000 milisegundos.
 
 Los graficos de tiempo de respuesta consideran intervalos de 10 milisegundos.
