@@ -1,0 +1,101 @@
+rut,name,lastname,password,birthdate,address,phone_number,position
+1,Vicente,Soto,1,1996-10-25,Chillán,+56 9 1,medico_radiologo
+2,Sebastián,Pérez,2,1999-11-12,Rancagua,+56 9 2,tecnologo_medico
+3,Maite,Rodríguez,3,1999-12-3,La Serena,+56 9 3,secretaria_unidad
+4,Martina,Espinoza,4,1995-7-15,Santiago,+56 9 4,jefe_unidad
+5,Sebastián,Soto,5,1997-2-22,Antofagasta,+56 9 5,tens
+6,Agustín,Martínez,6,1992-1-16,Punta Arenas,+56 9 6,jefe_unidad
+7,Antonella,Martínez,7,1998-1-12,Santiago,+56 9 7,secretaria_unidad
+8,Santiago,Flores,8,1999-8-18,Valdivia,+56 9 8,medico_radiologo
+9,Martina,Valenzuela,9,1997-1-24,La Serena,+56 9 9,medico_radiologo
+10,Vicente,Martínez,10,1995-9-24,Valparaíso,+56 9 10,tens
+11,Josefa,Herrera,11,1992-12-18,Viña del Mar,+56 9 11,tecnologo_medico
+12,Sebastián,Pérez,12,1991-10-19,Temuco,+56 9 12,medico_radiologo
+13,Emilia,Fernández,13,1990-4-4,Viña del Mar,+56 9 13,jefe_unidad
+14,Lucas,Díaz,14,2000-6-21,Iquique,+56 9 14,jefe_unidad
+15,Maite,González,15,1998-9-13,Arica,+56 9 15,jefe_unidad
+16,Sebastián,Rodríguez,16,1995-3-1,Iquique,+56 9 16,medico_radiologo
+17,Maite,Castro,17,1992-5-4,Santiago,+56 9 17,tens
+18,Josefa,Castro,18,1993-2-6,Iquique,+56 9 18,tecnologo_medico
+19,Santiago,Pérez,19,1991-6-17,Viña del Mar,+56 9 19,secretaria_unidad
+20,Josefa,Castro,20,2000-10-23,Temuco,+56 9 20,secretaria_unidad
+21,Amanda,Rojas,21,1998-3-21,Viña del Mar,+56 9 21,tecnologo_medico
+22,Sebastián,Soto,22,2000-1-11,Rancagua,+56 9 22,tens
+23,Antonella,Pérez,23,1999-6-9,Arica,+56 9 23,medico_radiologo
+24,Martín,Martínez,24,1998-11-20,Rancagua,+56 9 24,secretaria_unidad
+25,Florencia,Ramírez,25,1990-4-4,Concepción,+56 9 25,secretaria_unidad
+26,Santiago,Ramírez,26,1996-7-7,Antofagasta,+56 9 26,secretaria_unidad
+27,Amanda,Fernández,27,1993-3-9,Iquique,+56 9 27,tens
+28,Emilia,Pérez,28,1996-11-17,Arica,+56 9 28,tecnologo_medico
+29,Mateo,Rodríguez,29,1990-10-26,Santiago,+56 9 29,tens
+30,Matías,Espinoza,30,2000-1-2,Arica,+56 9 30,jefe_unidad
+31,Santiago,Sánchez,31,1995-5-7,Chillán,+56 9 31,medico_radiologo
+32,Lucas,Torres,32,1998-1-24,La Serena,+56 9 32,tens
+33,Lucas,López,33,1990-11-23,Viña del Mar,+56 9 33,secretaria_unidad
+34,Josefa,Rojas,34,1991-12-23,Concepción,+56 9 34,secretaria_unidad
+35,Amanda,Valenzuela,35,1996-5-4,Talca,+56 9 35,medico_radiologo
+36,Agustín,Torres,36,2000-9-5,Punta Arenas,+56 9 36,tens
+37,Vicente,Herrera,37,1991-7-16,Santiago,+56 9 37,jefe_unidad
+38,Amanda,Ramírez,38,1990-6-11,Antofagasta,+56 9 38,medico_radiologo
+39,Amanda,Espinoza,39,1997-10-3,Iquique,+56 9 39,tens
+40,Matías,Torres,40,1998-9-2,Viña del Mar,+56 9 40,jefe_unidad
+41,Sofía,Herrera,41,1997-10-1,Santiago,+56 9 41,tens
+42,Lucas,Valenzuela,42,1999-3-25,Viña del Mar,+56 9 42,secretaria_unidad
+43,Vicente,Pérez,43,1997-9-25,Valdivia,+56 9 43,secretaria_unidad
+44,Vicente,Pérez,44,1991-7-12,Punta Arenas,+56 9 44,tecnologo_medico
+45,Maite,Rodríguez,45,1999-8-23,La Serena,+56 9 45,jefe_unidad
+46,Antonella,Pérez,46,1996-7-16,Antofagasta,+56 9 46,tecnologo_medico
+47,Antonella,Ramírez,47,1991-1-2,Arica,+56 9 47,tecnologo_medico
+48,Matías,Fernández,48,1992-9-21,Chillán,+56 9 48,medico_radiologo
+49,Emma,Soto,49,1994-7-9,Chillán,+56 9 49,secretaria_unidad
+50,Maite,Rodríguez,50,1999-3-26,Valdivia,+56 9 50,tecnologo_medico
+51,Agustín,Silva,51,1992-3-3,Iquique,+56 9 51,tecnologo_medico
+52,Agustín,Flores,52,1992-11-17,Temuco,+56 9 52,jefe_unidad
+53,Antonella,González,53,1992-1-7,Valdivia,+56 9 53,tens
+54,Amanda,López,54,1996-2-11,Talca,+56 9 54,tecnologo_medico
+55,Lucas,Rodríguez,55,1994-2-7,Temuco,+56 9 55,jefe_unidad
+56,Vicente,Flores,56,1999-3-26,Arica,+56 9 56,secretaria_unidad
+57,Vicente,Ramírez,57,1995-3-19,Valparaíso,+56 9 57,jefe_unidad
+58,Lucas,López,58,1999-12-11,Viña del Mar,+56 9 58,jefe_unidad
+59,Benjamín,Herrera,59,1990-2-4,Chillán,+56 9 59,medico_radiologo
+60,Emma,Sánchez,60,1996-7-26,Puerto Montt,+56 9 60,tens
+61,Martina,Flores,61,2000-8-29,Antofagasta,+56 9 61,secretaria_unidad
+62,Florencia,Pérez,62,1993-11-20,Chillán,+56 9 62,tens
+63,Benjamín,Herrera,63,1990-11-15,Iquique,+56 9 63,tens
+64,Sebastián,Torres,64,1998-5-28,Concepción,+56 9 64,tecnologo_medico
+65,Santiago,Muñoz,65,1996-2-4,Talca,+56 9 65,jefe_unidad
+66,Lucas,Silva,66,1996-1-14,Valdivia,+56 9 66,secretaria_unidad
+67,Lucas,González,67,1993-8-10,Valparaíso,+56 9 67,secretaria_unidad
+68,Florencia,Rodríguez,68,1996-3-27,Puerto Montt,+56 9 68,tens
+69,Sebastián,López,69,1992-6-10,Talca,+56 9 69,medico_radiologo
+70,Mateo,Martínez,70,1997-7-27,Viña del Mar,+56 9 70,tens
+71,Mateo,Ramírez,71,1990-7-14,Iquique,+56 9 71,jefe_unidad
+72,Isidora,Pérez,72,1998-3-5,Arica,+56 9 72,medico_radiologo
+73,Martina,Ramírez,73,1993-10-11,La Serena,+56 9 73,tens
+74,Martín,Rojas,74,1994-8-19,Punta Arenas,+56 9 74,secretaria_unidad
+75,Isidora,Espinoza,75,1991-7-7,Chillán,+56 9 75,tens
+76,Agustín,Contreras,76,1997-12-25,Antofagasta,+56 9 76,medico_radiologo
+77,Amanda,López,77,1994-11-16,Rancagua,+56 9 77,jefe_unidad
+78,Santiago,Ramírez,78,1996-6-15,Santiago,+56 9 78,tecnologo_medico
+79,Martina,Martínez,79,1998-1-22,Punta Arenas,+56 9 79,tens
+80,Martín,Muñoz,80,1998-1-16,Rancagua,+56 9 80,tecnologo_medico
+81,Maite,López,81,1995-3-26,Talca,+56 9 81,jefe_unidad
+82,Agustín,Díaz,82,1997-5-27,Punta Arenas,+56 9 82,secretaria_unidad
+83,Martín,Contreras,83,1997-9-21,Puerto Montt,+56 9 83,secretaria_unidad
+84,Mateo,Rodríguez,84,2000-8-14,Valdivia,+56 9 84,tecnologo_medico
+85,Mateo,Muñoz,85,1997-10-25,Santiago,+56 9 85,tens
+86,Agustín,Contreras,86,1996-2-10,Temuco,+56 9 86,jefe_unidad
+87,Sofía,Castro,87,1995-6-9,Santiago,+56 9 87,tecnologo_medico
+88,Mateo,Contreras,88,1995-6-22,Antofagasta,+56 9 88,tecnologo_medico
+89,Benjamín,Muñoz,89,2000-11-20,Temuco,+56 9 89,tens
+90,Sofía,Espinoza,90,1996-6-3,Arica,+56 9 90,secretaria_unidad
+91,Maite,Castro,91,2000-2-13,Concepción,+56 9 91,jefe_unidad
+92,Benjamín,Valenzuela,92,1992-7-22,Iquique,+56 9 92,secretaria_unidad
+93,Antonella,López,93,1998-5-18,Concepción,+56 9 93,secretaria_unidad
+94,Sebastián,Herrera,94,2000-11-18,La Serena,+56 9 94,tens
+95,Florencia,Martínez,95,1999-5-4,La Serena,+56 9 95,medico_radiologo
+96,Agustín,Rodríguez,96,1991-9-21,Talca,+56 9 96,secretaria_unidad
+97,Sebastián,Pérez,97,1996-3-23,Antofagasta,+56 9 97,tecnologo_medico
+98,Mateo,Valenzuela,98,1998-4-1,La Serena,+56 9 98,jefe_unidad
+99,Martina,Silva,99,1991-8-8,Antofagasta,+56 9 99,tens
+100,Benjamín,Contreras,100,1996-4-17,Arica,+56 9 100,secretaria_unidad
