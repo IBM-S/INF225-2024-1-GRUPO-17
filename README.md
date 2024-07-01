@@ -43,8 +43,8 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 * [master-(2023-2)](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/master-(2023-2)) : Primera version del proyecto 2023-2 (Ultima revision: 27/11/2023)
   
 ## Notas
-[01-07-2024] En el Branch inspections se encuentran las actualizaciones que se realizaron por Sonarqube para el Hito 5
-[01-07-2024] En el Branch Apache-Jmeter se encuentran las pruebas de carga que se realizaron con Apache JMeter para el Hito 5
+[01-07-2024] En el Branch inspections se encuentran las actualizaciones que se realizaron por Sonarqube para el Hito 5.  
+[01-07-2024] En el Branch Apache-Jmeter se encuentran las pruebas de carga que se realizaron con Apache JMeter para el Hito 5.
 
 2023-2  
 2024-1
