@@ -32,7 +32,8 @@ import './../assets/profile/css/style.css';
 import './../assets/profile/css/colors/default-dark.css';
 import './../assets/profile/assets/plugins/bootstrap/js/bootstrap.bundle.min.js';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Button, Row, Col } from "react-bootstrap";
 import axios from 'axios';
 import { mostrarData } from '../redux/actions/dataPacienteActions.js';
 import { useSelector, useDispatch } from "react-redux";
@@ -91,7 +92,7 @@ function User() {
   return (
     <div className="fix-header card-no-border fix-sidebar">
         <div className="topbar">
-            <nav className="navbar top-navbar navbar-expand-md navbar-light"> 
+            <nav className="navbar top-navbar navbar-expand-md navbar-light">
                 <div className="navbar-header">
                     <a className="navbar-brand" href="index.html">
                         <b>
@@ -105,25 +106,25 @@ function User() {
                 <div className="navbar-collapse">
                     <ul className="navbar-nav me-auto">
                         <li className="nav-item">
-                            <a className="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0);">
+                            <a className="nav-link nav-toggler hidden-md-up waves-effect waves-dark">
                                 <i className="ti-menu"></i>
                             </a>
                         </li>
                     </ul>
                     <ul className="navbar-nav my-lg-0">
                         <li className="nav-item hidden-xs-down search-box">
-                            <a className="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0);">
+                            <a className="nav-link hidden-sm-down waves-effect waves-dark">
                                 <i className="ti-search"></i>
                             </a>
                             <form className="app-search">
                                 <input type="text" className="form-control" placeholder="Search & enter" />
-                                <a className="srh-btn" href="javascript:void(0);">
+                                <a className="srh-btn">
                                     <i className="ti-close"></i>
                                 </a>
                             </form>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link waves-effect waves-dark" href="javascript:void(0);">
+                            <a className="nav-link waves-effect waves-dark" href="#">
                                 <img src={require("./../assets/profile/assets/images/users/doctor.jpg")} alt="user" className="profile-pic" />
                             </a>
                         </li>
@@ -136,31 +137,31 @@ function User() {
                 <nav className="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="index.html" aria-expanded="false">
                                 <i className="mdi mdi-gauge"></i>
                                 <span className="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false">
                                 <i className="mdi mdi-account-check"></i>
                                 <span className="hide-menu">Perfil</span>
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="table-basic.html" aria-expanded="false">
                                 <i className="mdi mdi-table"></i>
                                 <span className="hide-menu">Calendario</span>
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="icon-material.html" aria-expanded="false">
                                 <i className="mdi mdi-emoticon"></i>
                                 <span className="hide-menu">Editar Hora Urgencia</span>
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="map-google.html" aria-expanded="false">
                                 <i className="mdi mdi-earth"></i>
                                 <span className="hide-menu">Pacientes</span>
                             </a>
@@ -172,7 +173,7 @@ function User() {
                             </a>
                         </li>
                         <li>
-                            <a className="waves-effect waves-dark" href="javascript:void(0);" aria-expanded="false">
+                            <a className="waves-effect waves-dark" href="pages-error-404.html" aria-expanded="false">
                                 <i className="mdi mdi-help-circle"></i>
                                 <span className="hide-menu">Estado Equipos</span>
                             </a>
@@ -266,13 +267,13 @@ function User() {
                             </div>
                         </div>
 
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="panel panel-default">
-                                    <div className="panel-heading text-center">
-                                        <span><strong><span className="glyphicon glyphicon-folder-open"> </span> Imagenes</strong></span>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading text-center">
+                                        <span><strong><span class="glyphicon glyphicon-folder-open"> </span> Imagenes</strong></span>
                                     </div>
-                                    <table className="table table-bordered table-hover vmiddle">
+                                    <table class="table table-bordered table-hover vmiddle">
                                         <thead>
                                             <tr>
                                                 <th>Tipo Examen</th>
@@ -285,10 +286,10 @@ function User() {
                                             <tr>
                                                 
                                                 <td>Radiografia</td>
-                                                <td className="text-center">
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
+                                                <td class="text-center">
+                                                    <a href="#"><span class="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
                                                 </td>
                                                 <td>523.0 KB </td>
                                                 <td>19-abr-24 08:45</td>
@@ -296,10 +297,10 @@ function User() {
                                             <tr>
                                                 
                                                 <td>Ecografia</td>
-                                                <td className="text-center">
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
+                                                <td class="text-center">
+                                                    <a href="#"><span class="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
                                                 </td>
                                                 <td>523.0 KB </td>
                                                 <td>10-oct-21 09:48</td>
@@ -307,10 +308,10 @@ function User() {
                                             <tr>
                                                
                                                 <td>Ecografia</td>
-                                                <td className="text-center">
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
-                                                    <a href="javascript:void(0);"><span className="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
+                                                <td class="text-center">
+                                                    <a href="#"><span class="btn btn-sm btn-danger glyphicon glyphicon-trash"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-primary glyphicon glyphicon-pencil"></span></a>
+                                                    <a href="#"><span class="btn btn-sm btn-warning glyphicon glyphicon-info-sign"></span></a>
                                                 </td>
                                                 <td>523.0 KB </td>
                                                 <td>12-sep-19 08:36</td>
