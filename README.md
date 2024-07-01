@@ -32,8 +32,19 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 
 ## Videos de Presentación 2024-1
 * [Video Presentación Hito 4](https://youtu.be/UFCdwwdbFp0)
+
+## Resumen Branches
+* [2024-1-Backend](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/2024-1-Backend) : Version Final del Backend (Ultima revision: 01/07/2024)
+* [2024-1-Frontend](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/2024-1-Frontend) : Version Final del Frontend (Ultima revision: 01/07/2024)
+* [Apache-Jmeter](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/Apache-Jmeter) : Pruebas de Carga con Apache JMeter (Ultima revision: 05/07/2024)
+* [Tests](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/Tests) : Tests realizados al Backend (Ultima revision: 01/05/2024)
+* [inspections](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/inspections) : Actualizacion Backend y Frontend Sonarqube (Ultima revision: 01/05/2024)
+* [main](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/main) : Branch Principal (Ultima revision: 01/05/2024)
+* [master-(2023-2)](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/master-(2023-2)) : Primera version del proyecto 2023-2 (Ultima revision: 27/11/2023)
   
-El código del proyecto se encuentra en el branch master del repositorio.
+## Notas
+[01-07-2024] En el Branch inspections se encuentran las actualizaciones que se realizaron por Sonarqube para el Hito 5
+[01-07-2024] En el Branch Apache-Jmeter se encuentran las pruebas de carga que se realizaron con Apache JMeter para el Hito 5
 
 2023-2  
 2024-1
