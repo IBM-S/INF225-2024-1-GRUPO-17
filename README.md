@@ -6,6 +6,6 @@ Esta versión del proyecto representa una iteración posterior a la revisión re
 
 En la carpeta Backend, se encuentra el codigo del Backend, al cual no se le hizo cambios.
 
-En la carpeta Frontend, se encuentra el codido del Frontend, el cual si se le hizo cambios.
+En la carpeta Frontend, se encuentra el codigo del Frontend, el cual si se le hizo cambios.
 
-En la capeta Inspectiones, se encuentran las fotos de las 2 Quality Issues y 1 foto de lo primero que vimos al entrar a la Issues
+En la capeta Inspections, se encuentran las fotos de las 2 Quality Issues y 1 foto de lo primero que vimos al entrar a la Issues
