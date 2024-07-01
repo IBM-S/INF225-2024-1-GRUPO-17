@@ -38,8 +38,8 @@ El proyecto se desarrolla utilizando el stack MERN (MongoDB, Express, React y No
 * [2024-1-Frontend](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/2024-1-Frontend) : Version Final del Frontend (Ultima revision: 01/07/2024)
 * [Apache-Jmeter](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/Apache-Jmeter) : Pruebas de Carga con Apache JMeter (Ultima revision: 01/07/2024)
 * [Tests](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/Tests) : Tests realizados al Backend (Ultima revision: 01/05/2024)
-* [inspections](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/inspections) : Actualizacion Backend y Frontend Sonarqube (Ultima revision: 01/05/2024)
-* [main](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/main) : Branch Principal (Ultima revision: 01/05/2024)
+* [inspections](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/inspections) : Actualizacion Backend y Frontend Sonarqube (Ultima revision: 01/07/2024)
+* [main](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/main) : Branch Principal (Ultima revision: 01/07/2024)
 * [master-(2023-2)](https://github.com/IBM-S/INF225-2024-1-GRUPO-17/tree/master-(2023-2)) : Primera version del proyecto 2023-2 (Ultima revision: 27/11/2023)
   
 ## Notas
